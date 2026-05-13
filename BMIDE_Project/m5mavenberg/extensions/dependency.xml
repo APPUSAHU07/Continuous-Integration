@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TcBusinessDataIncludes ActiveRelease="tc2512" currentTemplateVersion="2512.0_0" displayName="Mavenberg" enableOpsDataDeploy="true" guid="36400D1C1FD3778324BDBB8AB008109C" isDescriptionMandatory="false" name="m5mavenberg" optional="true" prefixes="M5" teamcenterTemplate="false">
+    <include file="foundation_template.xml"/>
+    <include file="aps0apscore_template.xml"/>
+    <include file="aws2_template.xml"/>
+    <include file="cla0classification_template.xml"/>
+    <include file="srh0apsconfiguredsearch_template.xml"/>
+    <include file="translationservice_template.xml"/>
+    <include file="aa1activearchitectcore_template.xml"/>
+    <include file="adm1admconsolecore_template.xml"/>
+    <include file="appmodel_template.xml"/>
+    <include file="aut0authorizationaws_template.xml"/>
+    <include file="bcs0buildconditions_template.xml"/>
+    <include file="dds0datadiscovery_template.xml"/>
+    <include file="dma1docmgmtaw_template.xml"/>
+    <include file="rb0reportingaw_template.xml"/>
+    <include file="sub0subscription_template.xml"/>
+    <include file="tie0aw_template.xml"/>
+    <include file="um0usermanagement_template.xml"/>
+    <include file="realization_template.xml"/>
+    <include file="partition_template.xml"/>
+    <include file="classification_template.xml"/>
+</TcBusinessDataIncludes>

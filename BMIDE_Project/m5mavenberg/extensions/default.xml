@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TcBusinessData xmlns="http://teamcenter.com/BusinessModel/TcBusinessData" Date="">
+<Add>
+   <TcClass className="M5COTS" parentClassName="M5Mpart" isExportable="false" isUninstantiable="false"
+       isUninheritable="false" description=""/>
+   <TcClass className="M5COTSMasterS" parentClassName="M5MpartMasterS" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="M5COTSRevMasterS" parentClassName="M5MpartRevMasterS" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="M5COTSRevision" parentClassName="M5MpartRevision" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="M5Jenkins" parentClassName="M5Mpart" isExportable="false" isUninstantiable="false"
+       isUninheritable="false" description=""/>
+   <TcClass className="M5JenkinsMasterS" parentClassName="M5MpartMasterS" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="M5JenkinsRevMasterS" parentClassName="M5MpartRevMasterS" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="M5JenkinsRevision" parentClassName="M5MpartRevision" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="M5Mpart" parentClassName="Part" isExportable="false" isUninstantiable="false"
+       isUninheritable="false" description=""/>
+   <TcClass className="M5MpartMasterS" parentClassName="PartMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="M5MpartRevMasterS" parentClassName="PartVerMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="M5MpartRevision" parentClassName="Part_0_Revision_alt" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description="">
+     <TcAttribute attributeName="m5Location" description="" attributeType="POM_string"
+         maxStringLength="128" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="m5Cost" description="" attributeType="POM_string"
+         maxStringLength="128" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+   </TcClass>
+   <OperationInputType typeName="M5COTSCreI" parentTypeName="M5MpartCreI" typeClassName="M5COTSCreI"
+       description="CreateInput object for &quot;M5COTS&quot; business object" isAbstract="false"
+       artifactName="M5COTSCreI"/>
+   <OperationInputType typeName="M5COTSMasterCreI" parentTypeName="M5MpartMasterCreI"
+       typeClassName="M5COTSMasterCreI" description="CreateInput object for &quot;M5COTSMaster&quot; business object"
+       isAbstract="false" artifactName="M5COTSMasterCreI"/>
+   <OperationInputType typeName="M5COTSMasterSCreI" parentTypeName="M5MpartMasterSCreI"
+       typeClassName="M5COTSMasterSCreI" description="CreateInput object for &quot;M5COTSMasterS&quot; business object"
+       isAbstract="false" artifactName="M5COTSMasterSCreI"/>
+   <OperationInputType typeName="M5COTSMasterSSvAI" parentTypeName="M5MpartMasterSSvAI"
+       typeClassName="M5COTSMasterSSvAI" description="SaveAsInput object for &quot;M5COTSMasterS&quot; business object"
+       isAbstract="false" artifactName="M5COTSMasterSSvAI"/>
+   <OperationInputType typeName="M5COTSMasterSvAI" parentTypeName="M5MpartMasterSvAI"
+       typeClassName="M5COTSMasterSvAI" description="SaveAsInput object for &quot;M5COTSMaster&quot; business object"
+       isAbstract="false" artifactName="M5COTSMasterSvAI"/>
+   <OperationInputType typeName="M5COTSRevMasterSCreI" parentTypeName="M5MpartRevMasterSCreI"
+       typeClassName="M5COTSRevMasterSCreI" description="CreateInput object for &quot;M5COTSRevMasterS&quot; business object"
+       isAbstract="false" artifactName="M5COTSRevMasterSCreI"/>
+   <OperationInputType typeName="M5COTSRevMasterSSvAI" parentTypeName="M5MpartRevMasterSSvAI"
+       typeClassName="M5COTSRevMasterSSvAI" description="SaveAsInput object for &quot;M5COTSRevMasterS&quot; business object"
+       isAbstract="false" artifactName="M5COTSRevMasterSSvAI"/>
+   <OperationInputType typeName="M5COTSRevisionCreI" parentTypeName="M5MpartRevisionCreI"
+       typeClassName="M5COTSRevisionCreI" description="CreateInput object for &quot;M5COTSRevision&quot; business object"
+       isAbstract="false" artifactName="M5COTSRevisionCreI"/>
+   <OperationInputType typeName="M5COTSRevisionMasterCreI" parentTypeName="M5MpartRevisionMasterCreI"
+       typeClassName="M5COTSRevisionMasterCreI" description="CreateInput object for &quot;M5COTSRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="M5COTSRevisionMasterCreI"/>
+   <OperationInputType typeName="M5COTSRevisionMasterSvAI" parentTypeName="M5MpartRevisionMasterSvAI"
+       typeClassName="M5COTSRevisionMasterSvAI" description="SaveAsInput object for &quot;M5COTSRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="M5COTSRevisionMasterSvAI"/>
+   <OperationInputType typeName="M5COTSRevisionRevI" parentTypeName="M5MpartRevisionRevI"
+       typeClassName="M5COTSRevisionRevI" description="ReviseInput object for &quot;M5COTSRevision&quot; business object"
+       isAbstract="false" artifactName="M5COTSRevisionRevI"/>
+   <OperationInputType typeName="M5COTSRevisionSvAI" parentTypeName="M5MpartRevisionSvAI"
+       typeClassName="M5COTSRevisionSvAI" description="SaveAsInput object for &quot;M5COTSRevision&quot; business object"
+       isAbstract="false" artifactName="M5COTSRevisionSvAI"/>
+   <OperationInputType typeName="M5COTSSvAI" parentTypeName="M5MpartSvAI" typeClassName="M5COTSSvAI"
+       description="SaveAsInput object for &quot;M5COTS&quot; business object" isAbstract="false"
+       artifactName="M5COTSSvAI"/>
+   <OperationInputType typeName="M5JenkinsCreI" parentTypeName="M5MpartCreI" typeClassName="M5JenkinsCreI"
+       description="CreateInput object for &quot;M5Jenkins&quot; business object"
+       isAbstract="false" artifactName="M5JenkinsCreI"/>
+   <OperationInputType typeName="M5JenkinsMasterCreI" parentTypeName="M5MpartMasterCreI"
+       typeClassName="M5JenkinsMasterCreI" description="CreateInput object for &quot;M5JenkinsMaster&quot; business object"
+       isAbstract="false" artifactName="M5JenkinsMasterCreI"/>
+   <OperationInputType typeName="M5JenkinsMasterSCreI" parentTypeName="M5MpartMasterSCreI"
+       typeClassName="M5JenkinsMasterSCreI" description="CreateInput object for &quot;M5JenkinsMasterS&quot; business object"
+       isAbstract="false" artifactName="M5JenkinsMasterSCreI"/>
+   <OperationInputType typeName="M5JenkinsMasterSSvAI" parentTypeName="M5MpartMasterSSvAI"
+       typeClassName="M5JenkinsMasterSSvAI" description="SaveAsInput object for &quot;M5JenkinsMasterS&quot; business object"
+       isAbstract="false" artifactName="M5JenkinsMasterSSvAI"/>
+   <OperationInputType typeName="M5JenkinsMasterSvAI" parentTypeName="M5MpartMasterSvAI"
+       typeClassName="M5JenkinsMasterSvAI" description="SaveAsInput object for &quot;M5JenkinsMaster&quot; business object"
+       isAbstract="false" artifactName="M5JenkinsMasterSvAI"/>
+   <OperationInputType typeName="M5JenkinsRevMasterSCreI" parentTypeName="M5MpartRevMasterSCreI"
+       typeClassName="M5JenkinsRevMasterSCreI" description="CreateInput object for &quot;M5JenkinsRevMasterS&quot; business object"
+       isAbstract="false" artifactName="M5JenkinsRevMasterSCreI"/>
+   <OperationInputType typeName="M5JenkinsRevMasterSSvAI" parentTypeName="M5MpartRevMasterSSvAI"
+       typeClassName="M5JenkinsRevMasterSSvAI" description="SaveAsInput object for &quot;M5JenkinsRevMasterS&quot; business object"
+       isAbstract="false" artifactName="M5JenkinsRevMasterSSvAI"/>
+   <OperationInputType typeName="M5JenkinsRevisionCreI" parentTypeName="M5MpartRevisionCreI"
+       typeClassName="M5JenkinsRevisionCreI" description="CreateInput object for &quot;M5JenkinsRevision&quot; business object"
+       isAbstract="false" artifactName="M5JenkinsRevisionCreI"/>
+   <OperationInputType typeName="M5JenkinsRevisionMasterCreI" parentTypeName="M5MpartRevisionMasterCreI"
+       typeClassName="M5JenkinsRevisionMasterCreI" description="CreateInput object for &quot;M5JenkinsRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="M5JenkinsRevisionMasterCreI"/>
+   <OperationInputType typeName="M5JenkinsRevisionMasterSvAI" parentTypeName="M5MpartRevisionMasterSvAI"
+       typeClassName="M5JenkinsRevisionMasterSvAI" description="SaveAsInput object for &quot;M5JenkinsRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="M5JenkinsRevisionMasterSvAI"/>
+   <OperationInputType typeName="M5JenkinsRevisionRevI" parentTypeName="M5MpartRevisionRevI"
+       typeClassName="M5JenkinsRevisionRevI" description="ReviseInput object for &quot;M5JenkinsRevision&quot; business object"
+       isAbstract="false" artifactName="M5JenkinsRevisionRevI"/>
+   <OperationInputType typeName="M5JenkinsRevisionSvAI" parentTypeName="M5MpartRevisionSvAI"
+       typeClassName="M5JenkinsRevisionSvAI" description="SaveAsInput object for &quot;M5JenkinsRevision&quot; business object"
+       isAbstract="false" artifactName="M5JenkinsRevisionSvAI"/>
+   <OperationInputType typeName="M5JenkinsSvAI" parentTypeName="M5MpartSvAI" typeClassName="M5JenkinsSvAI"
+       description="SaveAsInput object for &quot;M5Jenkins&quot; business object"
+       isAbstract="false" artifactName="M5JenkinsSvAI"/>
+   <OperationInputType typeName="M5MpartCreI" parentTypeName="PartCreI" typeClassName="M5MpartCreI"
+       description="CreateInput object for &quot;M5Mpart&quot; business object" isAbstract="false"
+       artifactName="M5MpartCreI"/>
+   <OperationInputType typeName="M5MpartMasterCreI" parentTypeName="Part MasterCreI"
+       typeClassName="M5MpartMasterCreI" description="CreateInput object for &quot;M5MpartMaster&quot; business object"
+       isAbstract="false" artifactName="M5MpartMasterCreI"/>
+   <OperationInputType typeName="M5MpartMasterSCreI" parentTypeName="PartMasterCreI"
+       typeClassName="M5MpartMasterSCreI" description="CreateInput object for &quot;M5MpartMasterS&quot; business object"
+       isAbstract="false" artifactName="M5MpartMasterSCreI"/>
+   <OperationInputType typeName="M5MpartMasterSSvAI" parentTypeName="PartMasterSvAI"
+       typeClassName="M5MpartMasterSSvAI" description="SaveAsInput object for &quot;M5MpartMasterS&quot; business object"
+       isAbstract="false" artifactName="M5MpartMasterSSvAI"/>
+   <OperationInputType typeName="M5MpartMasterSvAI" parentTypeName="Part MasterSvAI"
+       typeClassName="M5MpartMasterSvAI" description="SaveAsInput object for &quot;M5MpartMaster&quot; business object"
+       isAbstract="false" artifactName="M5MpartMasterSvAI"/>
+   <OperationInputType typeName="M5MpartRevMasterSCreI" parentTypeName="PartVerMasterCreI"
+       typeClassName="M5MpartRevMasterSCreI" description="CreateInput object for &quot;M5MpartRevMasterS&quot; business object"
+       isAbstract="false" artifactName="M5MpartRevMasterSCreI"/>
+   <OperationInputType typeName="M5MpartRevMasterSSvAI" parentTypeName="PartVerMasterSvAI"
+       typeClassName="M5MpartRevMasterSSvAI" description="SaveAsInput object for &quot;M5MpartRevMasterS&quot; business object"
+       isAbstract="false" artifactName="M5MpartRevMasterSSvAI"/>
+   <OperationInputType typeName="M5MpartRevisionCreI" parentTypeName="Part RevisionCreI"
+       typeClassName="M5MpartRevisionCreI" description="CreateInput object for &quot;M5MpartRevision&quot; business object"
+       isAbstract="false" artifactName="M5MpartRevisionCreI">
+     <OperationInputProperty propName="m5Location" compoundObjectConstant="" srcPropName="m5Location"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="m5Cost" compoundObjectConstant="" srcPropName="m5Cost"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+   </OperationInputType>
+   <OperationInputType typeName="M5MpartRevisionMasterCreI" parentTypeName="Part Revision MasterCreI"
+       typeClassName="M5MpartRevisionMasterCreI" description="CreateInput object for &quot;M5MpartRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="M5MpartRevisionMasterCreI"/>
+   <OperationInputType typeName="M5MpartRevisionMasterSvAI" parentTypeName="Part Revision MasterSvAI"
+       typeClassName="M5MpartRevisionMasterSvAI" description="SaveAsInput object for &quot;M5MpartRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="M5MpartRevisionMasterSvAI"/>
+   <OperationInputType typeName="M5MpartRevisionRevI" parentTypeName="Part RevisionRevI"
+       typeClassName="M5MpartRevisionRevI" description="ReviseInput object for &quot;M5MpartRevision&quot; business object"
+       isAbstract="false" artifactName="M5MpartRevisionRevI"/>
+   <OperationInputType typeName="M5MpartRevisionSvAI" parentTypeName="Part RevisionSvAI"
+       typeClassName="M5MpartRevisionSvAI" description="SaveAsInput object for &quot;M5MpartRevision&quot; business object"
+       isAbstract="false" artifactName="M5MpartRevisionSvAI"/>
+   <OperationInputType typeName="M5MpartSvAI" parentTypeName="PartSvAI" typeClassName="M5MpartSvAI"
+       description="SaveAsInput object for &quot;M5Mpart&quot; business object" isAbstract="false"
+       artifactName="M5MpartSvAI"/>
+   <TcForm typeName="M5COTSMaster" parentTypeName="M5MpartMaster" typeClassName="Form"
+       description="MasterForm object for &quot;M5COTS&quot; business object" isAbstract="false"
+       artifactName="M5COTSMaster" functionality="M5mavenberg" formStorageClassName="M5COTSMasterS"/>
+   <TcForm typeName="M5COTSRevisionMaster" parentTypeName="M5MpartRevisionMaster"
+       typeClassName="Form" description="MasterForm object for &quot;M5COTSRevision&quot; business object"
+       isAbstract="false" artifactName="M5COTSRevisionMaster" functionality="M5mavenberg"
+       formStorageClassName="M5COTSRevMasterS"/>
+   <TcForm typeName="M5JenkinsMaster" parentTypeName="M5MpartMaster" typeClassName="Form"
+       description="MasterForm object for &quot;M5Jenkins&quot; business object" isAbstract="false"
+       artifactName="M5JenkinsMaster" functionality="M5mavenberg" formStorageClassName="M5JenkinsMasterS"/>
+   <TcForm typeName="M5JenkinsRevisionMaster" parentTypeName="M5MpartRevisionMaster"
+       typeClassName="Form" description="MasterForm object for &quot;M5JenkinsRevision&quot; business object"
+       isAbstract="false" artifactName="M5JenkinsRevisionMaster" functionality="M5mavenberg"
+       formStorageClassName="M5JenkinsRevMasterS"/>
+   <TcForm typeName="M5MpartMaster" parentTypeName="Part Master" typeClassName="Form"
+       description="MasterForm object for &quot;M5Mpart&quot; business object" isAbstract="false"
+       artifactName="M5MpartMaster" functionality="M5mavenberg" formStorageClassName="M5MpartMasterS"/>
+   <TcForm typeName="M5MpartRevisionMaster" parentTypeName="Part Revision Master"
+       typeClassName="Form" description="MasterForm object for &quot;M5MpartRevision&quot; business object"
+       isAbstract="false" artifactName="M5MpartRevisionMaster" functionality="M5mavenberg"
+       formStorageClassName="M5MpartRevMasterS"/>
+   <TcStandardType typeName="M5COTS" parentTypeName="M5Mpart" typeClassName="M5COTS"
+       description="" isAbstract="false" artifactName="M5COTS" functionality="M5mavenberg"/>
+   <TcStandardType typeName="M5COTSMasterS" parentTypeName="M5MpartMasterS" typeClassName="M5COTSMasterS"
+       description="Form Storage object for &quot;M5COTSMaster&quot; business object"
+       isAbstract="false" artifactName="M5COTSMasterS" functionality="M5mavenberg"/>
+   <TcStandardType typeName="M5COTSRevMasterS" parentTypeName="M5MpartRevMasterS"
+       typeClassName="M5COTSRevMasterS" description="Form Storage object for &quot;M5COTSRevMaster&quot; business object"
+       isAbstract="false" artifactName="M5COTSRevMasterS" functionality="M5mavenberg"/>
+   <TcStandardType typeName="M5COTSRevision" parentTypeName="M5MpartRevision" typeClassName="M5COTSRevision"
+       description="ItemRevision object for &quot;M5COTS&quot;  business object" isAbstract="false"
+       artifactName="M5COTSRevision" functionality="M5mavenberg"/>
+   <TcStandardType typeName="M5Jenkins" parentTypeName="M5Mpart" typeClassName="M5Jenkins"
+       description="" isAbstract="false" artifactName="M5Jenkins" functionality="M5mavenberg"/>
+   <TcStandardType typeName="M5JenkinsMasterS" parentTypeName="M5MpartMasterS" typeClassName="M5JenkinsMasterS"
+       description="Form Storage object for &quot;M5JenkinsMaster&quot; business object"
+       isAbstract="false" artifactName="M5JenkinsMasterS" functionality="M5mavenberg"/>
+   <TcStandardType typeName="M5JenkinsRevMasterS" parentTypeName="M5MpartRevMasterS"
+       typeClassName="M5JenkinsRevMasterS" description="Form Storage object for &quot;M5JenkinsRevMaster&quot; business object"
+       isAbstract="false" artifactName="M5JenkinsRevMasterS" functionality="M5mavenberg"/>
+   <TcStandardType typeName="M5JenkinsRevision" parentTypeName="M5MpartRevision" typeClassName="M5JenkinsRevision"
+       description="ItemRevision object for &quot;M5Jenkins&quot;  business object"
+       isAbstract="false" artifactName="M5JenkinsRevision" functionality="M5mavenberg"/>
+   <TcStandardType typeName="M5Mpart" parentTypeName="Part" typeClassName="M5Mpart"
+       description="" isAbstract="false" artifactName="M5Mpart" functionality="M5mavenberg"/>
+   <TcStandardType typeName="M5MpartMasterS" parentTypeName="PartMaster" typeClassName="M5MpartMasterS"
+       description="Form Storage object for &quot;M5MpartMaster&quot; business object"
+       isAbstract="false" artifactName="M5MpartMasterS" functionality="M5mavenberg"/>
+   <TcStandardType typeName="M5MpartRevMasterS" parentTypeName="PartVerMaster" typeClassName="M5MpartRevMasterS"
+       description="Form Storage object for &quot;M5MpartRevMaster&quot; business object"
+       isAbstract="false" artifactName="M5MpartRevMasterS" functionality="M5mavenberg"/>
+   <TcStandardType typeName="M5MpartRevision" parentTypeName="Part Revision" typeClassName="M5MpartRevision"
+       description="ItemRevision object for &quot;M5Mpart&quot;  business object"
+       isAbstract="false" artifactName="M5MpartRevision" functionality="M5mavenberg"/>
+   <TcGlobalConstantAttach constantName="Fnd0SelectedLocales" value="en_US"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5COTS" value="M5COTSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5COTSMaster" value="M5COTSMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5COTSMasterS" value="M5COTSMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5COTSRevision" value="M5COTSRevisionCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5COTSRevisionMaster"
+       value="M5COTSRevisionMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5COTSRevMasterS" value="M5COTSRevMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5Jenkins" value="M5JenkinsCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5JenkinsMaster" value="M5JenkinsMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5JenkinsMasterS" value="M5JenkinsMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5JenkinsRevision" value="M5JenkinsRevisionCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5JenkinsRevisionMaster"
+       value="M5JenkinsRevisionMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5JenkinsRevMasterS"
+       value="M5JenkinsRevMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5Mpart" value="M5MpartCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5MpartMaster" value="M5MpartMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5MpartMasterS" value="M5MpartMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5MpartRevision" value="M5MpartRevisionCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5MpartRevisionMaster"
+       value="M5MpartRevisionMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5MpartRevMasterS" value="M5MpartRevMasterSCreI"/>
+   <TcTypeConstantAttach constantName="ItemRevision" typeName="M5COTS" value="M5COTSRevision"/>
+   <TcTypeConstantAttach constantName="ItemRevision" typeName="M5Jenkins" value="M5JenkinsRevision"/>
+   <TcTypeConstantAttach constantName="ItemRevision" typeName="M5Mpart" value="M5MpartRevision"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="M5COTS" value="M5COTSMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="M5COTSRevision" value="M5COTSRevisionMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="M5Jenkins" value="M5JenkinsMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="M5JenkinsRevision" value="M5JenkinsRevisionMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="M5Mpart" value="M5MpartMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="M5MpartRevision" value="M5MpartRevisionMaster"/>
+   <TcTypeConstantAttach constantName="ReviseInput" typeName="M5COTSRevision" value="M5COTSRevisionRevI"/>
+   <TcTypeConstantAttach constantName="ReviseInput" typeName="M5JenkinsRevision" value="M5JenkinsRevisionRevI"/>
+   <TcTypeConstantAttach constantName="ReviseInput" typeName="M5MpartRevision" value="M5MpartRevisionRevI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5COTS" value="M5COTSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5COTSMaster" value="M5COTSMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5COTSMasterS" value="M5COTSMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5COTSRevision" value="M5COTSRevisionSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5COTSRevisionMaster"
+       value="M5COTSRevisionMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5COTSRevMasterS" value="M5COTSRevMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5Jenkins" value="M5JenkinsSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5JenkinsMaster" value="M5JenkinsMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5JenkinsMasterS" value="M5JenkinsMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5JenkinsRevision" value="M5JenkinsRevisionSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5JenkinsRevisionMaster"
+       value="M5JenkinsRevisionMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5JenkinsRevMasterS"
+       value="M5JenkinsRevMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5Mpart" value="M5MpartSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5MpartMaster" value="M5MpartMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5MpartMasterS" value="M5MpartMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5MpartRevision" value="M5MpartRevisionSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5MpartRevisionMaster"
+       value="M5MpartRevisionMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5MpartRevMasterS" value="M5MpartRevMasterSSvAI"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="M5MpartRevision" propertyName="m5Cost"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="M5MpartRevision" propertyName="m5Location"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="M5MpartRevision"
+       propertyName="m5Cost" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="M5MpartRevision"
+       propertyName="m5Location" value="Write"/>
+   <TcNamingRule name="M5COTSNR">
+     <TcPattern generateCounters="true" patternString="&quot;C&quot;&quot;-&quot;NNNN">
+       <TcCounter initialValue="C-0001" maximumValue="C-9999"/>
+     </TcPattern>
+   </TcNamingRule>
+   <TcNamingRule name="M5Jenkins">
+     <TcPattern generateCounters="true" patternString="&quot;J&quot;&quot;-&quot;NNNN">
+       <TcCounter initialValue="J-0001" maximumValue="J-9999"/>
+     </TcPattern>
+   </TcNamingRule>
+   <TcNamingRule name="M5MpartNR">
+     <TcPattern generateCounters="true" patternString="&quot;MP&quot;&quot;-&quot;NNNN">
+       <TcCounter initialValue="MP-0001" maximumValue="MP-9999"/>
+     </TcPattern>
+   </TcNamingRule>
+   <TcNamingRuleAttach ruleName="M5Jenkins" typeName="M5Jenkins" propertyName="item_id"
+       case="Mix" conditionName="isTrue" override="true" ruleType="NamingRule" description=""/>
+   <TcNamingRuleAttach ruleName="M5MpartNR" typeName="M5Mpart" propertyName="item_id"
+       case="Mix" conditionName="isTrue" override="false" ruleType="NamingRule" description=""/>
+   <TcNamingRuleAttach ruleName="M5COTSNR" typeName="M5COTS" propertyName="item_id"
+       case="Mix" conditionName="isTrue" override="true" ruleType="NamingRule" description=""/>
+   <TcLOV name="M5Location" lovType="ListOfValuesString" usage="Exhaustive" description="">
+     <TcLOVValue value="Pune" description="" conditionName="isTrue"/>
+     <TcLOVValue value="Bengaluru" description="" conditionName="isTrue"/>
+   </TcLOV>
+   <TcLOVAttach lovName="M5Location" typeName="M5MpartRevision">
+     <TcLOVAttachPropertyInfo valuePropertyName="m5Location" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <Functionality name="M5mavenberg" displayName="Mavenberg" enabledForVerificationRules="false"
+       description="Component for the template - m5mavenberg"/>
+</Add>
+</TcBusinessData>

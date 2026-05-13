@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TcBusinessDataLocalization xmlns="http://teamcenter.com/BusinessModel/TcBusinessDataLocalization"
+    Date="">
+<Add>
+   <key locale="en_US" id="BusinessObject{::}M5COTSMasterS" status="Approved">COTS Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}M5COTSMaster" status="Approved">COTS Master</key>
+   <key locale="en_US" id="BusinessObject{::}M5COTSRevMasterS" status="Approved">COTS Revision Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}M5COTSRevisionMaster" status="Approved">COTS Revision Master</key>
+   <key locale="en_US" id="BusinessObject{::}M5COTSRevision" status="Approved">COTS Revision</key>
+   <key locale="en_US" id="BusinessObject{::}M5COTS" status="Approved">COTS</key>
+   <key locale="en_US" id="BusinessObject{::}M5JenkinsMasterS" status="Approved">Jenkins Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}M5JenkinsMaster" status="Approved">Jenkins Master</key>
+   <key locale="en_US" id="BusinessObject{::}M5JenkinsRevMasterS" status="Approved">Jenkins Revision Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}M5JenkinsRevisionMaster" status="Approved">Jenkins Revision Master</key>
+   <key locale="en_US" id="BusinessObject{::}M5JenkinsRevision" status="Approved">Jenkins Revision</key>
+   <key locale="en_US" id="BusinessObject{::}M5Jenkins" status="Approved">Jenkins</key>
+   <key locale="en_US" id="BusinessObject{::}M5MpartMasterS" status="Approved">Mpart Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}M5MpartMaster" status="Approved">Mpart Master</key>
+   <key locale="en_US" id="BusinessObject{::}M5MpartRevMasterS" status="Approved">Mpart Revision Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}M5MpartRevisionMaster" status="Approved">Mpart Revision Master</key>
+   <key locale="en_US" id="BusinessObject{::}M5MpartRevision" status="Approved">Mpart Revision</key>
+   <key locale="en_US" id="BusinessObject{::}M5Mpart" status="Approved">Mpart</key>
+   <key locale="en_US" id="LOVValue{::}M5Location{::}Bengaluru" status="Approved">Bengaluru</key>
+   <key locale="en_US" id="LOVValue{::}M5Location{::}Pune" status="Approved">Pune</key>
+   <key locale="en_US" id="Property{::}M5MpartRevision{::}m5Cost" status="Approved">Cost</key>
+   <key locale="en_US" id="Property{::}M5MpartRevision{::}m5Location" status="Approved">Location</key>
+</Add>
+</TcBusinessDataLocalization>

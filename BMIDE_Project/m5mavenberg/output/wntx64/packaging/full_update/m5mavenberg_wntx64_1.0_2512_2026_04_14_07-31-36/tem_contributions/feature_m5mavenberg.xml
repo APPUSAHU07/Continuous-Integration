@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    Document   : feature_m5mavenberg.xml
+    Description: This XML is used by TEM to install or upgrade the "m5mavenberg" solution.
+-->
+<feature>
+    <name value="Mavenberg"/>
+    <property name="feature_name" value="m5mavenberg"/>
+    <group value="package"/>
+    <guid value="1BF94422ED3EE2E89CC225146177A0DA"/>
+    <bundle value="${feature_name}Bundle.xml"/>
+    <description value="${feature_name}.description"/>
+    <include file="dataModelDependency.xml"/>
+    <relation>
+        <depends name="aps0apscore" value="C48D31DEEAB44695153AEBF6FF96864D"/>
+        <depends name="aws2" value="EF6284519D32B8DADCF0F05213AF807B"/>
+        <depends name="cla0classification" value="DA3F5D4113BC31CC36A257EAB0669DDA"/>
+        <depends name="srh0apsconfiguredsearch" value="B021413FCA884F4CA074016F279FCEE8"/>
+        <depends name="translationservice" value="301F12B06B3EAAB18DC0C2B9444F3B20"/>
+        <depends name="aa1activearchitectcore" value="711003675C5174C1FEB859208E69F692"/>
+        <depends name="adm1admconsolecore" value="A66DA1DA1116896B8F028F7DDDC8E491"/>
+        <depends name="appmodel" value="F48016E4FBF7F866155FC83B3845DC6F"/>
+        <depends name="aut0authorizationaws" value="E5F45EFFA34DA47F2CD8E4F150F81C11"/>
+        <depends name="bcs0buildconditions" value="BF1DC0AB2E00C422EC2DB63F3B960562"/>
+        <depends name="dds0datadiscovery" value="2F8C053E894B18CB92A5A95EB73BB7EE"/>
+        <depends name="dma1docmgmtaw" value="7F3FE95ADA658AA457AB15EF5B75B3FA"/>
+        <depends name="rb0reportingaw" value="841B43626F01810EE89A04FF22C744D4"/>
+        <depends name="sub0subscription" value="6FE48291523DB8DCDAF0F05213AF8B70"/>
+        <depends name="tie0aw" value="06FC936550C5741026DBA9A4D923D44F"/>
+        <depends name="um0usermanagement" value="04A9489F7F5D51E0B521903B748C87B3"/>
+        <depends name="realization" value="9D98D83C2FCB4C1CEA454CA42EF79665"/>
+        <depends name="partition" value="8BF58CB036C8E3E53C5C38E9D7E471F8"/>
+        <depends name="classification" value="3D85937EC9CEAB8E204FD099E8BD873B"/>
+    </relation>
+    <feature>
+        <!--  Feature: Data Model -->
+        <name value="Data Model"/>
+        <property name="feature_id" value="datamodel"/>
+        <property name="bmide_optional" value="false"/>
+        <property name="template_name" value="${feature_name}"/>
+        <property name="template_file" value="${template_name}_template.xml"/>
+        <root value="true"/>
+        <bundle value="${template_name}Bundle.xml"/>
+        <description value="${template_name}.description"/>
+        <guid value="36400D1C1FD3778324BDBB8AB008109C"/>
+        <include file="coreDataModel2.xml"/>
+        <include file="generatePlmxmlSchema.xml"/>
+    </feature>
+    <dependencyReferences>
+        <reference name="foundation" value="8C061DD51E13E0CB9DC4687B1A3348BE"/>
+    </dependencyReferences>
+</feature>

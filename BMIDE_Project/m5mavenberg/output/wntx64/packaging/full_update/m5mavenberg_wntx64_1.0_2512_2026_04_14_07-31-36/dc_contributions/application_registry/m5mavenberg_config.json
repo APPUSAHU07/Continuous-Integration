@@ -1,0 +1,31 @@
+{
+  "appId": "m5mavenberg",
+  "attributes": {
+    "visible": true
+  },
+  "requireDependencies": [
+    "aps0apscore",
+    "aws2",
+    "cla0classification",
+    "srh0apsconfiguredsearch",
+    "translationservice",
+    "aa1activearchitectcore",
+    "adm1admconsolecore",
+    "appmodel",
+    "aut0authorizationaws",
+    "bcs0buildconditions",
+    "dds0datadiscovery",
+    "dma1docmgmtaw",
+    "rb0reportingaw",
+    "sub0subscription",
+    "tie0aw",
+    "um0usermanagement",
+    "realization",
+    "partition",
+    "classification",
+    "fnd0_foundation"
+  ],
+  "supportedArtifacts": [
+    "fnd0_dataModelArtifact"
+  ]
+}
