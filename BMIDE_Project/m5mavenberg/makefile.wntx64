@@ -1,0 +1,190 @@
+# ==================================================
+# Copyright 2023
+# Siemens Product Lifecycle Management Software Inc.
+# All Rights Reserved.
+# ==================================================
+# ==================================================
+#             Auto-generated source
+#                 DO NOT EDIT
+# ==================================================
+
+
+
+
+# =============================================================================
+# Usage:
+# nmake -f makefile.wntx64 [OPT_CXX_FLAGS=-Zi] [JAVAC_DEBUG=true] [NET_CONFIG=Debug]  all|clean
+#
+#    OPT_CXX_FLAGS  Optionally set this argument to add compile flags
+#                   to the C++ targets
+#    JAVAC_DEBUG    Optionally set this argument to true to enable debug mode 
+#                   of the Java targets. This will compile the Java targets in 
+#                   debug mode, and include the source files in the Jars.
+#    NET_CONFIG     Optionally set this argument to Debug to enable debug mode 
+#                   of the .NET targets.
+#    Target			The build target: 
+#                       all		Build all targets for this project (default).
+#                       clean   Delete all generated artifacts for this project.
+#
+#  The following environment variables are required to be set:  
+#
+# =============================================================================
+
+OPT_CXX_FLAGS      =
+JAVAC_DEBUG        = false
+NET_CONFIG         = Release
+
+
+
+
+# ==================================================
+# Platform specific paths
+# ==================================================
+BASE_PATH          = C:\PLM\TC2512\tcroot\bmide\workspace\2512000.0.0\m5mavenberg
+TC_ROOT            = 
+TEMPLATE_HOME      = C:\PLM\TC2512\tcroot\bmide\templates
+SOA_CLIENT_KIT     = 
+RAC_HOME           = 
+COMPILER_HOME	   = 
+
+
+
+
+
+
+
+
+# ==================================================
+# Platform specific options and commands
+# ==================================================
+PLAT               = wntx64
+PS                 =\ 
+PD                 =;
+OS_TYPE            = Win
+LP                 = -LIBPATH:
+OBJ_EXT            = obj
+LIB_EXT            = dll
+LIB_PREFIX         = lib
+LIB_SUFFIX         = .lib
+SCRIPT_EXT         = .bat
+CSHARP_COMPILER    = dotnet.exe
+TOOLBOX_HOME       = $(SOA_CLIENT_KIT)\toolbox
+ANT                = $(TOOLBOX_HOME)\Ant\bin\ant
+COMPILE            = cl
+LINK               = link
+CXX_FLAGS          = $(OPT_CXX_FLAGS) -MD -c -nologo -EHsc -GS -Zc:__cplusplus -guard:cf -FS -FI $(TC_ROOT)\include\msvcpragmas.h  -std:c++20 -permissive- -Zc:strictStrings- -DWIN32_LEAN_AND_MEAN -DWNT -D_WIN32_WINNT=_WIN32_WINNT_WIN10 -DNOMINMAX -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -DWNT -D_WIN32 -DWIN32 -D_WIN64 -DCRTAPI1=_cdecl -DCRTAPI2=cdecl -Wall
+LINK_FLAGS         = -dll -debug -nologo -nodefaultlib -incremental:no -subsystem:console -dynamicbase -nxcompat -OPT:REF -debug:FULL
+CPP_INCLUDES       = -I$(SOA_CLIENT_KIT)\cpp\includes\cpp\include
+CPPMNGD_INCLUDES   = -I$(SOA_CLIENT_KIT)\cpp\includes\cpp-managed\include 
+LIB_PATH           = $(LP)$(SOA_CLIENT_KIT)\cpp\libs\$(PLAT) $(LP)$(TC_ROOT)\lib
+SYSLIBS            = ucrt.lib vcruntime.lib msvcrt.lib msvcprt.lib kernel32.lib 
+CARG_OUT           = /Fo
+LARG_OUT           = -out:
+MAKE_DIR           = mkdir
+DELETE_DIR         = rmdir /S /Q
+DELETE_FILE        = del
+COPY_FILE          = copy
+SET_ENV            = SET
+
+
+# ==================================================
+# Third Party Libraries defined per platform
+# ==================================================
+
+
+
+
+# ==================================================
+# Service client bindings enabled per platform, 
+# A blank value is enabled, NoOp is disabled
+# ==================================================
+JAVA_STRONG_ENABLED= 
+JAVA_LOOSE_ENABLED = 
+JAVA_RAC_ENABLED   = NoOp
+CPP_STRONG_ENABLED = 
+CPP_MANAGED_ENABLED= 
+NET_STRONG_ENABLED = 
+WSDLS_ENABLED      = 
+GENERATED_STUBS    = strong-java,strong-net,strong-cpp,managed-cpp,loose-java,
+
+
+
+PROJECT_HOME       = .
+PROJECT_OUT_HOME   = output\wntx64
+PROJECT_OUT        = $(BASE_PATH)\output
+PROJECT_DRV        = $(BASE_PATH)\output\generated
+PROJECT_PLAT       = $(BASE_PATH)\$(PROJECT_OUT_HOME)
+PROJECT_OBJ        = $(BASE_PATH)\$(PROJECT_OUT_HOME)\objs
+PROJECT_BIN        = $(BASE_PATH)\$(PROJECT_OUT_HOME)\lib
+PROJECT_CLS        = $(BASE_PATH)\$(PROJECT_OUT_HOME)\classes
+PROJECT_JAR        = $(BASE_PATH)\$(PROJECT_OUT_HOME)\jars
+PROJECT_IOD        = $(BASE_PATH)\$(PROJECT_OUT_HOME)\netIntermediate
+PROJECT_NET        = $(BASE_PATH)\$(PROJECT_OUT_HOME)
+PROJECT_KIT        = $(BASE_PATH)\$(PROJECT_OUT_HOME)\packaging
+PROJECT_SOA_CLIENT = $(BASE_PATH)\$(PROJECT_OUT_HOME)\packaging\soa_client
+PROJECT_TC         = $(BASE_PATH)\$(PROJECT_OUT_HOME)\packaging\tc
+
+all : m5mavenberg_project_all
+
+
+
+m5mavenberg_project_all : build_message create_out_folders 
+	@echo ________________________________________________________________________________
+	@echo Successfully Built All Libraries for m5mavenberg
+	@echo ________________________________________________________________________________
+
+build_message :
+	@echo ________________________________________________________________________________
+	@echo Building All Libraries for m5mavenberg
+	@echo ________________________________________________________________________________
+
+clean : clean_message 
+	@echo ________________________________________________________________________________
+	@echo Successfully Cleaned All Generated Files for m5mavenberg
+	@echo ________________________________________________________________________________
+
+clean_message :
+	@echo ________________________________________________________________________________
+	@echo Cleaning All Generated Files for m5mavenberg
+	@echo ________________________________________________________________________________
+
+
+create_out_folders : $(PROJECT_OUT) $(PROJECT_DRV) $(PROJECT_PLAT) $(PROJECT_BIN) $(PROJECT_OBJ) $(PROJECT_KIT)  $(PROJECT_TC) $(PROJECT_TC)$(PS)bin $(PROJECT_TC)$(PS)lib
+
+$(PROJECT_OUT) :	
+	@echo Creating: $(PROJECT_OUT)
+	-@$(MAKE_DIR) $(PROJECT_OUT)
+
+$(PROJECT_DRV) :	
+	@echo Creating: $(PROJECT_DRV)
+	-@$(MAKE_DIR) $(PROJECT_DRV)
+
+$(PROJECT_PLAT) :	
+	@echo Creating: $(PROJECT_PLAT)
+	-@$(MAKE_DIR) $(PROJECT_PLAT)
+
+    
+$(PROJECT_BIN) :	
+	@echo Creating: $(PROJECT_BIN)
+	-@$(MAKE_DIR) $(PROJECT_BIN)
+
+$(PROJECT_OBJ) :	
+	@echo Creating: $(PROJECT_OBJ)
+	-@$(MAKE_DIR) $(PROJECT_OBJ)
+
+$(PROJECT_KIT) :
+	@echo Creating: $(PROJECT_KIT)
+	-@$(MAKE_DIR) $(PROJECT_KIT)
+
+$(PROJECT_TC) :
+	@echo Creating: $(PROJECT_TC)
+	-@$(MAKE_DIR) $(PROJECT_TC)
+
+$(PROJECT_TC)$(PS)bin :
+	@echo Creating: $(PROJECT_TC)$(PS)bin
+	-@$(MAKE_DIR) $(PROJECT_TC)$(PS)bin
+
+
+$(PROJECT_TC)$(PS)lib :
+	@echo Creating: $(PROJECT_TC)$(PS)lib
+	-@$(MAKE_DIR) $(PROJECT_TC)$(PS)lib
