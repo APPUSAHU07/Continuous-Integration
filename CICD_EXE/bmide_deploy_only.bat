@@ -1,9 +1,6 @@
 @echo on
 setlocal enabledelayedexpansion
 
-:: Package already generated and in DC repo — skip bmide_generate_package
-:: ACTC_CUSTOM_CONFIG_DIR points directly to the package folder
-
 echo === [ Finding package folder START ] ===
 pushd %ACTC_CUSTOM_CONFIG_DIR%
 for /f "delims=" %%i IN ('dir /b /ad /t:c /od') DO (
@@ -14,11 +11,10 @@ popd
 echo Final PACKFOLDER: %PACKFOLDER%
 
 echo === [ Copy template files START ] ===
-for /f %%A IN ('wmic os get LocalDateTime ^| findstr \.') do set B=%%A
-set TS=%B:~2,12%
-set BMIDE_PKG=%TEMP%\mi8_deploy_data_model_%TS%
-
+set BMIDE_PKG=%TEMP%\mi8_deploy_data_model
+if exist "%BMIDE_PKG%" rmdir /s /q "%BMIDE_PKG%"
 mkdir "%BMIDE_PKG%" || exit /b !ERRORLEVEL!
+
 echo n | "%TC_ROOT%\install\install\7za" x -aoa -bb2 -bd -o"%BMIDE_PKG%" "%ACTC_CUSTOM_CONFIG_DIR%\%PACKFOLDER%\artifacts\%PROJECT_TEMPLATE_NAME%_template.zip"
 
 xcopy "%BMIDE_PKG%\install\%PROJECT_TEMPLATE_NAME%\%PROJECT_TEMPLATE_NAME%_template.xml" "%TC_DATA%\model\" /i /r /y /f || exit /b !ERRORLEVEL!
@@ -27,7 +23,7 @@ xcopy "%BMIDE_PKG%\install\%PROJECT_TEMPLATE_NAME%\lang\%PROJECT_TEMPLATE_NAME%_
 xcopy "%ACTC_CUSTOM_CONFIG_DIR%\%PACKFOLDER%\artifacts\client_%PROJECT_TEMPLATE_NAME%.properties" "%TC_DATA%\model\" /i /r /y /f || exit /b !ERRORLEVEL!
 xcopy "%ACTC_CUSTOM_CONFIG_DIR%\%PACKFOLDER%\artifacts\%PROJECT_TEMPLATE_NAME%_icons.zip" "%TC_DATA%\model\icons\" /i /r /y /f || exit /b !ERRORLEVEL!
 
-del /f /q "%BMIDE_PKG%"
+rmdir /s /q "%BMIDE_PKG%"
 echo === [ Copy template files END ] ===
 
 echo === [ Extract data model START ] ===
