@@ -37,20 +37,23 @@ if exist "%ICON_ZIP%" (
         echo FILE = %%F
         echo SIZE = %%~zF bytes
 
-        REM Empty/broken zip check
-        IF %%~zF LEQ 100 (
+        REM Empty/broken zip check - threshold 500 bytes covers BMIDE empty zip overhead (~236 bytes)
+        IF %%~zF LEQ 500 (
 
-            echo INVALID ICON ZIP DETECTED
-            echo DELETING EMPTY ICON ZIP...
-
+            echo INVALID ICON ZIP DETECTED - SIZE %%~zF bytes
+            echo DELETING EMPTY ICON ZIP FROM PACKAGE...
             del /f /q "%ICON_ZIP%"
 
             IF EXIST "%ICON_ZIP%" (
                 echo FAILED TO DELETE ICON ZIP
                 exit /b 1
             )
+            echo EMPTY ICON ZIP REMOVED FROM PACKAGE
 
-            echo EMPTY ICON ZIP REMOVED
+            REM Also remove stale icon zip from model\icons if left over from a previous failed run
+            echo REMOVING STALE ICON ZIP FROM MODEL ICONS DIR IF PRESENT...
+            del /f /q "%TC_DATA%\model\icons\%PROJECT_TEMPLATE_NAME%_icons.zip"
+            echo STALE ICON ZIP CLEANUP DONE
 
         ) ELSE (
 
@@ -71,6 +74,10 @@ if exist "%ICON_ZIP%" (
 ) ELSE (
 
     echo NO ICON ZIP FOUND
+    REM Also remove stale icon zip from model\icons if left over from a previous failed run
+    echo REMOVING STALE ICON ZIP FROM MODEL ICONS DIR IF PRESENT...
+    del /f /q "%TC_DATA%\model\icons\%PROJECT_TEMPLATE_NAME%_icons.zip"
+    echo STALE ICON ZIP CLEANUP DONE
 )
 
 rmdir /s /q "%BMIDE_PKG%"
