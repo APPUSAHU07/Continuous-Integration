@@ -22,13 +22,55 @@ xcopy "%BMIDE_PKG%\install\%PROJECT_TEMPLATE_NAME%\%PROJECT_TEMPLATE_NAME%_depen
 xcopy "%BMIDE_PKG%\install\%PROJECT_TEMPLATE_NAME%\lang\%PROJECT_TEMPLATE_NAME%_template_en_US.xml" "%TC_DATA%\model\lang\" /i /r /y /f || exit /b !ERRORLEVEL!
 xcopy "%ACTC_CUSTOM_CONFIG_DIR%\%PACKFOLDER%\artifacts\client_%PROJECT_TEMPLATE_NAME%.properties" "%TC_DATA%\model\" /i /r /y /f || exit /b !ERRORLEVEL!
 if not exist "%TC_DATA%\model\icons\" mkdir "%TC_DATA%\model\icons\"
-FOR %%F IN ("%ACTC_CUSTOM_CONFIG_DIR%\%PACKFOLDER%\artifacts\%PROJECT_TEMPLATE_NAME%_icons.zip") DO (
-    IF %%~zF GTR 0 (
-        echo Copying icons zip %%~zF bytes
-        xcopy "%%F" "%TC_DATA%\model\icons\" /i /r /y /f
-    ) ELSE (
-        echo Skipping empty icons zip - no custom icons in this project
+
+set ICON_ZIP=%ACTC_CUSTOM_CONFIG_DIR%\%PACKFOLDER%\artifacts\%PROJECT_TEMPLATE_NAME%_icons.zip
+
+echo ======================================
+echo CHECKING ICON ZIP
+echo ======================================
+
+if exist "%ICON_ZIP%" (
+
+    FOR %%F IN ("%ICON_ZIP%") DO (
+
+        echo ICON ZIP FOUND
+        echo FILE = %%F
+        echo SIZE = %%~zF bytes
+
+        REM Empty/broken zip check
+        IF %%~zF LEQ 100 (
+
+            echo INVALID ICON ZIP DETECTED
+            echo DELETING EMPTY ICON ZIP...
+
+            del /f /q "%ICON_ZIP%"
+
+            IF EXIST "%ICON_ZIP%" (
+                echo FAILED TO DELETE ICON ZIP
+                exit /b 1
+            )
+
+            echo EMPTY ICON ZIP REMOVED
+
+        ) ELSE (
+
+            echo VALID ICON ZIP FOUND
+            echo COPYING ICON ZIP...
+
+            xcopy "%%F" "%TC_DATA%\model\icons\" /i /r /y /f
+
+            IF !ERRORLEVEL! NEQ 0 (
+                echo ICON COPY FAILED
+                exit /b 1
+            )
+
+            echo ICON ZIP COPIED
+        )
     )
+
+) ELSE (
+
+    echo NO ICON ZIP FOUND
 )
 
 rmdir /s /q "%BMIDE_PKG%"
