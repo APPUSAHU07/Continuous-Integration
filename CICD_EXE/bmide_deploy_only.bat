@@ -21,7 +21,8 @@ xcopy "%BMIDE_PKG%\install\%PROJECT_TEMPLATE_NAME%\%PROJECT_TEMPLATE_NAME%_templ
 xcopy "%BMIDE_PKG%\install\%PROJECT_TEMPLATE_NAME%\%PROJECT_TEMPLATE_NAME%_dependency.xml" "%TC_DATA%\model\" /i /r /y /f || exit /b !ERRORLEVEL!
 xcopy "%BMIDE_PKG%\install\%PROJECT_TEMPLATE_NAME%\lang\%PROJECT_TEMPLATE_NAME%_template_en_US.xml" "%TC_DATA%\model\lang\" /i /r /y /f || exit /b !ERRORLEVEL!
 xcopy "%ACTC_CUSTOM_CONFIG_DIR%\%PACKFOLDER%\artifacts\client_%PROJECT_TEMPLATE_NAME%.properties" "%TC_DATA%\model\" /i /r /y /f || exit /b !ERRORLEVEL!
-xcopy "%ACTC_CUSTOM_CONFIG_DIR%\%PACKFOLDER%\artifacts\%PROJECT_TEMPLATE_NAME%_icons.zip" "%TC_DATA%\model\icons\" /i /r /y /f || exit /b !ERRORLEVEL!
+if not exist "%TC_DATA%\model\icons\" mkdir "%TC_DATA%\model\icons\"
+xcopy "%ACTC_CUSTOM_CONFIG_DIR%\%PACKFOLDER%\artifacts\%PROJECT_TEMPLATE_NAME%_icons.zip" "%TC_DATA%\model\icons\" /i /r /y /f
 
 rmdir /s /q "%BMIDE_PKG%"
 echo === [ Copy template files END ] ===
