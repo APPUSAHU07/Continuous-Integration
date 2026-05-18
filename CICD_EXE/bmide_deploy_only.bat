@@ -2,6 +2,7 @@
 setlocal enabledelayedexpansion
 
 echo === [ Pre-run DB unlock START ] ===
+call "%TC_ROOT%\tc_menu\tc_2512.bat"
 call "%TC_BIN%\install" -unlock_db -u=%ACTC_DATA_LOAD_USER% -p=%ACTC_DATA_LOAD_USER_PWD% -g=%ACTC_DATA_LOAD_USER_GRP%
 echo PRE-RUN UNLOCK EXIT: %ERRORLEVEL%
 echo === [ Pre-run DB unlock END ] ===
@@ -109,7 +110,7 @@ call "%TC_BIN%\business_model_updater.exe" -u=%ACTC_DATA_LOAD_USER% -p=%ACTC_DAT
 echo === [ Update data model lang END ] ===
 
 echo Waiting 60 seconds for TC sessions to clear before post-deploy...
-timeout /t 60 /nobreak
+REM timeout /t 60 /nobreak
 echo Wait complete.
 
 echo === [ Post-deploy START ] ===
