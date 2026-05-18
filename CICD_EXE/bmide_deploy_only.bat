@@ -1,6 +1,11 @@
 @echo on
 setlocal enabledelayedexpansion
 
+echo === [ Pre-run DB unlock START ] ===
+call "%TC_BIN%\install" -unlock_db -u=%ACTC_DATA_LOAD_USER% -p=%ACTC_DATA_LOAD_USER_PWD% -g=%ACTC_DATA_LOAD_USER_GRP%
+echo PRE-RUN UNLOCK EXIT: %ERRORLEVEL%
+echo === [ Pre-run DB unlock END ] ===
+
 echo === [ Finding package folder START ] ===
 pushd %ACTC_CUSTOM_CONFIG_DIR%
 for /f "delims=" %%i IN ('dir /b /ad /t:c /od') DO (
