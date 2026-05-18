@@ -98,7 +98,7 @@ echo === [ Generate delta changes END ] ===
 echo === [ Pre-deploy START ] ===
 call "%TC_BIN%\install" -regen_schema_file -u=%ACTC_DATA_LOAD_USER% -p=%ACTC_DATA_LOAD_USER_PWD% -g=%ACTC_DATA_LOAD_USER_GRP% || exit /b !ERRORLEVEL!
 call "%TC_BIN%\install" -lock_db -u=%ACTC_DATA_LOAD_USER% -p=%ACTC_DATA_LOAD_USER_PWD% -g=%ACTC_DATA_LOAD_USER_GRP% || exit /b !ERRORLEVEL!
-call "%TC_BIN%\clearlocks" -assert_all_dead -u=infodba -p=infodba -g=dba
+call "%TC_BIN%\clearlocks" -assert_all_dead -u=%ACTC_DATA_LOAD_USER% -p=%ACTC_DATA_LOAD_USER_PWD% -g=%ACTC_DATA_LOAD_USER_GRP% || exit /b !ERRORLEVEL!
 echo === [ Pre-deploy END ] ===
 
 echo === [ Update data model START ] ===
@@ -117,7 +117,7 @@ echo === [ Post-deploy START ] ===
 call "%TC_BIN%\install" -regen_schema_file -u=%ACTC_DATA_LOAD_USER% -p=%ACTC_DATA_LOAD_USER_PWD% -g=%ACTC_DATA_LOAD_USER_GRP% || exit /b !ERRORLEVEL!
 call "%TC_BIN%\install" -gen_xmit_file -u=%ACTC_DATA_LOAD_USER% -p=%ACTC_DATA_LOAD_USER_PWD% -g=%ACTC_DATA_LOAD_USER_GRP% || exit /b !ERRORLEVEL!
 call "%TC_BIN%\bmide_manage_templates" -u=%ACTC_DATA_LOAD_USER% -p=%ACTC_DATA_LOAD_USER_PWD% -g=%ACTC_DATA_LOAD_USER_GRP% -option=fullupdate -templates="%PROJECT_TEMPLATE_NAME%" || exit /b !ERRORLEVEL!
-call "%TC_BIN%\clearlocks" -assert_all_dead -u=infodba -p=infodba -g=dba
+call "%TC_BIN%\clearlocks" -assert_all_dead -u=%ACTC_DATA_LOAD_USER% -p=%ACTC_DATA_LOAD_USER_PWD% -g=%ACTC_DATA_LOAD_USER_GRP% || exit /b !ERRORLEVEL!
 call "%TC_BIN%\install" -unlock_db -u=%ACTC_DATA_LOAD_USER% -p=%ACTC_DATA_LOAD_USER_PWD% -g=%ACTC_DATA_LOAD_USER_GRP% || exit /b !ERRORLEVEL!
 echo === [ Post-deploy END ] ===
 
