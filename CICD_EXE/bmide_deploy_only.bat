@@ -50,7 +50,6 @@ if exist "%ICON_ZIP%" (
             )
             echo EMPTY ICON ZIP REMOVED FROM PACKAGE
 
-            REM Also remove stale icon zip from model\icons if left over from a previous failed run
             echo REMOVING STALE ICON ZIP FROM MODEL ICONS DIR IF PRESENT...
             del /f /q "%TC_DATA%\model\icons\%PROJECT_TEMPLATE_NAME%_icons.zip"
             echo STALE ICON ZIP CLEANUP DONE
@@ -74,7 +73,6 @@ if exist "%ICON_ZIP%" (
 ) ELSE (
 
     echo NO ICON ZIP FOUND
-    REM Also remove stale icon zip from model\icons if left over from a previous failed run
     echo REMOVING STALE ICON ZIP FROM MODEL ICONS DIR IF PRESENT...
     del /f /q "%TC_DATA%\model\icons\%PROJECT_TEMPLATE_NAME%_icons.zip"
     echo STALE ICON ZIP CLEANUP DONE
@@ -104,6 +102,10 @@ echo === [ Update data model END ] ===
 echo === [ Update data model lang START ] ===
 call "%TC_BIN%\business_model_updater.exe" -u=%ACTC_DATA_LOAD_USER% -p=%ACTC_DATA_LOAD_USER_PWD% -g=%ACTC_DATA_LOAD_USER_GRP% -mode=upgrade -update=localization -process=all -file="%TC_DATA%\model\lang\delta_lang.xml" || exit /b !ERRORLEVEL!
 echo === [ Update data model lang END ] ===
+
+echo Waiting 60 seconds for TC sessions to clear before post-deploy...
+timeout /t 60 /nobreak
+echo Wait complete.
 
 echo === [ Post-deploy START ] ===
 call "%TC_BIN%\install" -regen_schema_file -u=%ACTC_DATA_LOAD_USER% -p=%ACTC_DATA_LOAD_USER_PWD% -g=%ACTC_DATA_LOAD_USER_GRP% || exit /b !ERRORLEVEL!
