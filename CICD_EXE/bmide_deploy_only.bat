@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 echo === [ Pre-run DB unlock START ] ===
-call "%TC_ROOT%\tc_menu\tc_2512.bat"
+call "%TC_DATA%\tc_profilevars.bat"
 call "%TC_BIN%\install" -unlock_db -u=%ACTC_DATA_LOAD_USER% -p=%ACTC_DATA_LOAD_USER_PWD% -g=%ACTC_DATA_LOAD_USER_GRP%
 echo PRE-RUN UNLOCK EXIT: %ERRORLEVEL%
 echo === [ Pre-run DB unlock END ] ===
