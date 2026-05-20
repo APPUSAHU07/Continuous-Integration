@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<quickDeployConfig configName="TC2512" version="1.0">
+    <quickDeployComponents>
+        <component id="fnd0_tcdbserver" machineName="DESKTOP-TDF03JU" platform="wntx64">
+            <property id="fnd0_dbStateOptions" value="dbAlreadyExist"/>
+        </component>
+        <component id="fnd0_licensingserver" machineName="192.168.20.9" platform="wntx64">
+            <property id="fnd0_tcLincensingPort" value="29000"/>
+        </component>
+    </quickDeployComponents>
+</quickDeployConfig>
