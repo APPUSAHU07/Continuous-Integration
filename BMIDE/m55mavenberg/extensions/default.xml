@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TcBusinessData xmlns="http://teamcenter.com/BusinessModel/TcBusinessData" Date="">
+<Add>
+   <TcClass className="M55HotWheels" parentClassName="Item" isExportable="false" isUninstantiable="false"
+       isUninheritable="false" description=""/>
+   <TcClass className="M55HotWheelsMasterS" parentClassName="ItemMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="M55HotWheelsRevMasterS" parentClassName="ItemVersionMaster"
+       isExportable="false" isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="M55HotWheelsRevision" parentClassName="ItemRevision" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <OperationInputType typeName="M55HotWheelsCreI" parentTypeName="ItemCreI" typeClassName="M55HotWheelsCreI"
+       description="CreateInput object for &quot;M55HotWheels&quot; business object"
+       isAbstract="false" artifactName="M55HotWheelsCreI"/>
+   <OperationInputType typeName="M55HotWheelsMasterCreI" parentTypeName="Item MasterCreI"
+       typeClassName="M55HotWheelsMasterCreI" description="CreateInput object for &quot;M55HotWheelsMaster&quot; business object"
+       isAbstract="false" artifactName="M55HotWheelsMasterCreI"/>
+   <OperationInputType typeName="M55HotWheelsMasterSCreI" parentTypeName="ItemMasterCreI"
+       typeClassName="M55HotWheelsMasterSCreI" description="CreateInput object for &quot;M55HotWheelsMasterS&quot; business object"
+       isAbstract="false" artifactName="M55HotWheelsMasterSCreI"/>
+   <OperationInputType typeName="M55HotWheelsMasterSSvAI" parentTypeName="ItemMasterSvAI"
+       typeClassName="M55HotWheelsMasterSSvAI" description="SaveAsInput object for &quot;M55HotWheelsMasterS&quot; business object"
+       isAbstract="false" artifactName="M55HotWheelsMasterSSvAI"/>
+   <OperationInputType typeName="M55HotWheelsMasterSvAI" parentTypeName="Item MasterSvAI"
+       typeClassName="M55HotWheelsMasterSvAI" description="SaveAsInput object for &quot;M55HotWheelsMaster&quot; business object"
+       isAbstract="false" artifactName="M55HotWheelsMasterSvAI"/>
+   <OperationInputType typeName="M55HotWheelsRevMasterSCreI" parentTypeName="ItemVersionMasterCreI"
+       typeClassName="M55HotWheelsRevMasterSCreI" description="CreateInput object for &quot;M55HotWheelsRevMasterS&quot; business object"
+       isAbstract="false" artifactName="M55HotWheelsRevMasterSCreI"/>
+   <OperationInputType typeName="M55HotWheelsRevMasterSSvAI" parentTypeName="ItemVersionMasterSvAI"
+       typeClassName="M55HotWheelsRevMasterSSvAI" description="SaveAsInput object for &quot;M55HotWheelsRevMasterS&quot; business object"
+       isAbstract="false" artifactName="M55HotWheelsRevMasterSSvAI"/>
+   <OperationInputType typeName="M55HotWheelsRevisionCreI" parentTypeName="ItemRevisionCreI"
+       typeClassName="M55HotWheelsRevisionCreI" description="CreateInput object for &quot;M55HotWheelsRevision&quot; business object"
+       isAbstract="false" artifactName="M55HotWheelsRevisionCreI"/>
+   <OperationInputType typeName="M55HotWheelsRevisionMasterCreI" parentTypeName="ItemRevision MasterCreI"
+       typeClassName="M55HotWheelsRevisionMasterCreI" description="CreateInput object for &quot;M55HotWheelsRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="M55HotWheelsRevisionMasterCreI"/>
+   <OperationInputType typeName="M55HotWheelsRevisionMasterSvAI" parentTypeName="ItemRevision MasterSvAI"
+       typeClassName="M55HotWheelsRevisionMasterSvAI" description="SaveAsInput object for &quot;M55HotWheelsRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="M55HotWheelsRevisionMasterSvAI"/>
+   <OperationInputType typeName="M55HotWheelsRevisionRevI" parentTypeName="ItemRevisionRevI"
+       typeClassName="M55HotWheelsRevisionRevI" description="ReviseInput object for &quot;M55HotWheelsRevision&quot; business object"
+       isAbstract="false" artifactName="M55HotWheelsRevisionRevI"/>
+   <OperationInputType typeName="M55HotWheelsRevisionSvAI" parentTypeName="ItemRevisionSvAI"
+       typeClassName="M55HotWheelsRevisionSvAI" description="SaveAsInput object for &quot;M55HotWheelsRevision&quot; business object"
+       isAbstract="false" artifactName="M55HotWheelsRevisionSvAI"/>
+   <OperationInputType typeName="M55HotWheelsSvAI" parentTypeName="ItemSvAI" typeClassName="M55HotWheelsSvAI"
+       description="SaveAsInput object for &quot;M55HotWheels&quot; business object"
+       isAbstract="false" artifactName="M55HotWheelsSvAI"/>
+   <TcForm typeName="M55HotWheelsMaster" parentTypeName="Item Master" typeClassName="Form"
+       description="MasterForm object for &quot;M55HotWheels&quot; business object"
+       isAbstract="false" artifactName="M55HotWheelsMaster" functionality="M55mavenberg"
+       formStorageClassName="M55HotWheelsMasterS"/>
+   <TcForm typeName="M55HotWheelsRevisionMaster" parentTypeName="ItemRevision Master"
+       typeClassName="Form" description="MasterForm object for &quot;M55HotWheelsRevision&quot; business object"
+       isAbstract="false" artifactName="M55HotWheelsRevisionMaster" functionality="M55mavenberg"
+       formStorageClassName="M55HotWheelsRevMasterS"/>
+   <TcStandardType typeName="M55HotWheels" parentTypeName="Item" typeClassName="M55HotWheels"
+       description="" isAbstract="false" artifactName="M55HotWheels" functionality="M55mavenberg"/>
+   <TcStandardType typeName="M55HotWheelsMasterS" parentTypeName="ItemMaster" typeClassName="M55HotWheelsMasterS"
+       description="Form Storage object for &quot;M55HotWheelsMaster&quot; business object"
+       isAbstract="false" artifactName="M55HotWheelsMasterS" functionality="M55mavenberg"/>
+   <TcStandardType typeName="M55HotWheelsRevMasterS" parentTypeName="ItemVersionMaster"
+       typeClassName="M55HotWheelsRevMasterS" description="Form Storage object for &quot;M55HotWheelsRevMaster&quot; business object"
+       isAbstract="false" artifactName="M55HotWheelsRevMasterS" functionality="M55mavenberg"/>
+   <TcStandardType typeName="M55HotWheelsRevision" parentTypeName="ItemRevision" typeClassName="M55HotWheelsRevision"
+       description="ItemRevision object for &quot;M55HotWheels&quot;  business object"
+       isAbstract="false" artifactName="M55HotWheelsRevision" functionality="M55mavenberg"/>
+   <TcGlobalConstantAttach constantName="Fnd0SelectedLocales" value="en_US"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M55HotWheels" value="M55HotWheelsCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M55HotWheelsMaster"
+       value="M55HotWheelsMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M55HotWheelsMasterS"
+       value="M55HotWheelsMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M55HotWheelsRevision"
+       value="M55HotWheelsRevisionCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M55HotWheelsRevisionMaster"
+       value="M55HotWheelsRevisionMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M55HotWheelsRevMasterS"
+       value="M55HotWheelsRevMasterSCreI"/>
+   <TcTypeConstantAttach constantName="ItemRevision" typeName="M55HotWheels" value="M55HotWheelsRevision"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="M55HotWheels" value="M55HotWheelsMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="M55HotWheelsRevision"
+       value="M55HotWheelsRevisionMaster"/>
+   <TcTypeConstantAttach constantName="ReviseInput" typeName="M55HotWheelsRevision"
+       value="M55HotWheelsRevisionRevI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M55HotWheels" value="M55HotWheelsSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M55HotWheelsMaster"
+       value="M55HotWheelsMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M55HotWheelsMasterS"
+       value="M55HotWheelsMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M55HotWheelsRevision"
+       value="M55HotWheelsRevisionSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M55HotWheelsRevisionMaster"
+       value="M55HotWheelsRevisionMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M55HotWheelsRevMasterS"
+       value="M55HotWheelsRevMasterSSvAI"/>
+   <Functionality name="M55mavenberg" displayName="mavenberg" enabledForVerificationRules="false"
+       description="Component for the template - m55mavenberg"/>
+</Add>
+</TcBusinessData>

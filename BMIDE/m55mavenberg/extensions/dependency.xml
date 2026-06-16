@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TcBusinessDataIncludes ActiveRelease="tc2512" currentTemplateVersion="2512.0_0" displayName="mavenberg" enableOpsDataDeploy="true" guid="378D7C13F370D027C35860D37FB41E8A" isDescriptionMandatory="false" name="m55mavenberg" optional="true" prefixes="M55" teamcenterTemplate="false">
+    <include file="foundation_template.xml"/>
+</TcBusinessDataIncludes>
