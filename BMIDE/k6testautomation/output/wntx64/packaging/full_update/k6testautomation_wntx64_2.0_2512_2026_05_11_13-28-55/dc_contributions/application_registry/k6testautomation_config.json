@@ -1,0 +1,37 @@
+{
+  "appId": "k6testautomation",
+  "attributes": {
+    "visible": true
+  },
+  "requireDependencies": [
+    "fnd0_foundation",
+    "aps0apscore",
+    "aws2",
+    "cla0classification",
+    "cm",
+    "srh0apsconfiguredsearch",
+    "translationservice",
+    "aa1activearchitectcore",
+    "activeworkspacebom",
+    "adm1admconsolecore",
+    "appmodel",
+    "aut0authorizationaws",
+    "bcs0buildconditions",
+    "csi",
+    "dds0datadiscovery",
+    "dma1docmgmtaw",
+    "rb0reportingaw",
+    "sub0subscription",
+    "tie0aw",
+    "um0usermanagement",
+    "Cm1cmaws",
+    "fgc0cm4g",
+    "realization",
+    "partition",
+    "rzc0rlzcm",
+    "classification"
+  ],
+  "supportedArtifacts": [
+    "fnd0_dataModelArtifact"
+  ]
+}

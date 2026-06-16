@@ -1,0 +1,1457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TcBusinessData xmlns="http://teamcenter.com/BusinessModel/TcBusinessData" Date="">
+<Add>
+   <TcClass className="K6World" parentClassName="Item" isExportable="false" isUninstantiable="false"
+       isUninheritable="false" description="">
+     <TcAttribute attributeName="k6_Capital" description="" attributeType="POM_string"
+         maxStringLength="128" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="k6_Country" description="" attributeType="POM_string"
+         maxStringLength="128" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+   </TcClass>
+   <TcClass className="K6WorldMasterS" parentClassName="ItemMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="K6WorldRevMasterS" parentClassName="ItemVersionMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="K6WorldRevision" parentClassName="ItemRevision" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="K6_PartBO" parentClassName="Part" isExportable="false" isUninstantiable="false"
+       isUninheritable="false" description="">
+     <TcAttribute attributeName="k6_Cost" description="" attributeType="POM_string"
+         maxStringLength="128" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" initialValue=""
+         lowerBoundValue="" upperBoundValue=""/>
+     <TcAttribute attributeName="k6_TotalCost" description="" attributeType="POM_string"
+         maxStringLength="128" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+   </TcClass>
+   <TcClass className="K6_PartBOMasterS" parentClassName="PartMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="K6_PartBORevMasterS" parentClassName="PartVerMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="K6_PartBORevision" parentClassName="Part_0_Revision_alt" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description="">
+     <TcAttribute attributeName="k6_Cost" description="" attributeType="POM_string"
+         maxStringLength="128" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="k6_TotalCost" description="" attributeType="POM_string"
+         maxStringLength="128" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="k6_Price" description="" attributeType="POM_int"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="k6_TotalPrice" description="" attributeType="POM_int"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="k6_Value" description="" attributeType="POM_double"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="k6_TotalValue" description="" attributeType="POM_double"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="k6_customprop" description="" attributeType="POM_double"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="k6_totalcustomprop" description="" attributeType="POM_double"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+   </TcClass>
+   <OperationInputType typeName="K6WorldCreI" parentTypeName="ItemCreI" typeClassName="K6WorldCreI"
+       description="CreateInput object for &quot;K6World&quot; business object" isAbstract="false"
+       artifactName="K6WorldCreI">
+     <OperationInputProperty propName="k6_Capital" compoundObjectConstant="" srcPropName="k6_Capital"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="k6_Country" compoundObjectConstant="" srcPropName="k6_Country"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+   </OperationInputType>
+   <OperationInputType typeName="K6WorldMasterCreI" parentTypeName="Item MasterCreI"
+       typeClassName="K6WorldMasterCreI" description="CreateInput object for &quot;K6WorldMaster&quot; business object"
+       isAbstract="false" artifactName="K6WorldMasterCreI"/>
+   <OperationInputType typeName="K6WorldMasterSCreI" parentTypeName="ItemMasterCreI"
+       typeClassName="K6WorldMasterSCreI" description="CreateInput object for &quot;K6WorldMasterS&quot; business object"
+       isAbstract="false" artifactName="K6WorldMasterSCreI"/>
+   <OperationInputType typeName="K6WorldMasterSSvAI" parentTypeName="ItemMasterSvAI"
+       typeClassName="K6WorldMasterSSvAI" description="SaveAsInput object for &quot;K6WorldMasterS&quot; business object"
+       isAbstract="false" artifactName="K6WorldMasterSSvAI"/>
+   <OperationInputType typeName="K6WorldMasterSvAI" parentTypeName="Item MasterSvAI"
+       typeClassName="K6WorldMasterSvAI" description="SaveAsInput object for &quot;K6WorldMaster&quot; business object"
+       isAbstract="false" artifactName="K6WorldMasterSvAI"/>
+   <OperationInputType typeName="K6WorldRevMasterSCreI" parentTypeName="ItemVersionMasterCreI"
+       typeClassName="K6WorldRevMasterSCreI" description="CreateInput object for &quot;K6WorldRevMasterS&quot; business object"
+       isAbstract="false" artifactName="K6WorldRevMasterSCreI"/>
+   <OperationInputType typeName="K6WorldRevMasterSSvAI" parentTypeName="ItemVersionMasterSvAI"
+       typeClassName="K6WorldRevMasterSSvAI" description="SaveAsInput object for &quot;K6WorldRevMasterS&quot; business object"
+       isAbstract="false" artifactName="K6WorldRevMasterSSvAI"/>
+   <OperationInputType typeName="K6WorldRevisionCreI" parentTypeName="ItemRevisionCreI"
+       typeClassName="K6WorldRevisionCreI" description="CreateInput object for &quot;K6WorldRevision&quot; business object"
+       isAbstract="false" artifactName="K6WorldRevisionCreI"/>
+   <OperationInputType typeName="K6WorldRevisionMasterCreI" parentTypeName="ItemRevision MasterCreI"
+       typeClassName="K6WorldRevisionMasterCreI" description="CreateInput object for &quot;K6WorldRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="K6WorldRevisionMasterCreI"/>
+   <OperationInputType typeName="K6WorldRevisionMasterSvAI" parentTypeName="ItemRevision MasterSvAI"
+       typeClassName="K6WorldRevisionMasterSvAI" description="SaveAsInput object for &quot;K6WorldRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="K6WorldRevisionMasterSvAI"/>
+   <OperationInputType typeName="K6WorldRevisionRevI" parentTypeName="ItemRevisionRevI"
+       typeClassName="K6WorldRevisionRevI" description="ReviseInput object for &quot;K6WorldRevision&quot; business object"
+       isAbstract="false" artifactName="K6WorldRevisionRevI"/>
+   <OperationInputType typeName="K6WorldRevisionSvAI" parentTypeName="ItemRevisionSvAI"
+       typeClassName="K6WorldRevisionSvAI" description="SaveAsInput object for &quot;K6WorldRevision&quot; business object"
+       isAbstract="false" artifactName="K6WorldRevisionSvAI"/>
+   <OperationInputType typeName="K6WorldSvAI" parentTypeName="ItemSvAI" typeClassName="K6WorldSvAI"
+       description="SaveAsInput object for &quot;K6World&quot; business object" isAbstract="false"
+       artifactName="K6WorldSvAI"/>
+   <OperationInputType typeName="K6_PartBOCreI" parentTypeName="PartCreI" typeClassName="K6_PartBOCreI"
+       description="CreateInput object for &quot;K6_PartBO&quot; business object"
+       isAbstract="false" artifactName="K6_PartBOCreI">
+     <OperationInputProperty propName="k6_Cost" compoundObjectConstant="" srcPropName="k6_Cost"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="k6_TotalCost" compoundObjectConstant="" srcPropName="k6_TotalCost"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+   </OperationInputType>
+   <OperationInputType typeName="K6_PartBOMasterCreI" parentTypeName="Part MasterCreI"
+       typeClassName="K6_PartBOMasterCreI" description="CreateInput object for &quot;K6_PartBOMaster&quot; business object"
+       isAbstract="false" artifactName="K6_PartBOMasterCreI"/>
+   <OperationInputType typeName="K6_PartBOMasterSCreI" parentTypeName="PartMasterCreI"
+       typeClassName="K6_PartBOMasterSCreI" description="CreateInput object for &quot;K6_PartBOMasterS&quot; business object"
+       isAbstract="false" artifactName="K6_PartBOMasterSCreI"/>
+   <OperationInputType typeName="K6_PartBOMasterSSvAI" parentTypeName="PartMasterSvAI"
+       typeClassName="K6_PartBOMasterSSvAI" description="SaveAsInput object for &quot;K6_PartBOMasterS&quot; business object"
+       isAbstract="false" artifactName="K6_PartBOMasterSSvAI"/>
+   <OperationInputType typeName="K6_PartBOMasterSvAI" parentTypeName="Part MasterSvAI"
+       typeClassName="K6_PartBOMasterSvAI" description="SaveAsInput object for &quot;K6_PartBOMaster&quot; business object"
+       isAbstract="false" artifactName="K6_PartBOMasterSvAI"/>
+   <OperationInputType typeName="K6_PartBORevMasterSCreI" parentTypeName="PartVerMasterCreI"
+       typeClassName="K6_PartBORevMasterSCreI" description="CreateInput object for &quot;K6_PartBORevMasterS&quot; business object"
+       isAbstract="false" artifactName="K6_PartBORevMasterSCreI"/>
+   <OperationInputType typeName="K6_PartBORevMasterSSvAI" parentTypeName="PartVerMasterSvAI"
+       typeClassName="K6_PartBORevMasterSSvAI" description="SaveAsInput object for &quot;K6_PartBORevMasterS&quot; business object"
+       isAbstract="false" artifactName="K6_PartBORevMasterSSvAI"/>
+   <OperationInputType typeName="K6_PartBORevisionCreI" parentTypeName="Part RevisionCreI"
+       typeClassName="K6_PartBORevisionCreI" description="CreateInput object for &quot;K6_PartBORevision&quot; business object"
+       isAbstract="false" artifactName="K6_PartBORevisionCreI">
+     <OperationInputProperty propName="k6_Cost" compoundObjectConstant="" srcPropName="k6_Cost"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="k6_TotalCost" compoundObjectConstant="" srcPropName="k6_TotalCost"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="k6_Price" compoundObjectConstant="" srcPropName="k6_Price"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="k6_TotalPrice" compoundObjectConstant="" srcPropName="k6_TotalPrice"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="k6_Value" compoundObjectConstant="" srcPropName="k6_Value"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="k6_TotalValue" compoundObjectConstant="" srcPropName="k6_TotalValue"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="k6_customprop" compoundObjectConstant="" srcPropName="k6_customprop"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="k6_totalcustomprop" compoundObjectConstant=""
+         srcPropName="k6_totalcustomprop" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+   </OperationInputType>
+   <OperationInputType typeName="K6_PartBORevisionMasterCreI" parentTypeName="Part Revision MasterCreI"
+       typeClassName="K6_PartBORevisionMasterCreI" description="CreateInput object for &quot;K6_PartBORevisionMaster&quot; business object"
+       isAbstract="false" artifactName="K6_PartBORevisionMasterCreI"/>
+   <OperationInputType typeName="K6_PartBORevisionMasterSvAI" parentTypeName="Part Revision MasterSvAI"
+       typeClassName="K6_PartBORevisionMasterSvAI" description="SaveAsInput object for &quot;K6_PartBORevisionMaster&quot; business object"
+       isAbstract="false" artifactName="K6_PartBORevisionMasterSvAI"/>
+   <OperationInputType typeName="K6_PartBORevisionRevI" parentTypeName="Part RevisionRevI"
+       typeClassName="K6_PartBORevisionRevI" description="ReviseInput object for &quot;K6_PartBORevision&quot; business object"
+       isAbstract="false" artifactName="K6_PartBORevisionRevI"/>
+   <OperationInputType typeName="K6_PartBORevisionSvAI" parentTypeName="Part RevisionSvAI"
+       typeClassName="K6_PartBORevisionSvAI" description="SaveAsInput object for &quot;K6_PartBORevision&quot; business object"
+       isAbstract="false" artifactName="K6_PartBORevisionSvAI"/>
+   <OperationInputType typeName="K6_PartBOSvAI" parentTypeName="PartSvAI" typeClassName="K6_PartBOSvAI"
+       description="SaveAsInput object for &quot;K6_PartBO&quot; business object"
+       isAbstract="false" artifactName="K6_PartBOSvAI"/>
+   <TcForm typeName="K6WorldMaster" parentTypeName="Item Master" typeClassName="Form"
+       description="MasterForm object for &quot;K6World&quot; business object" isAbstract="false"
+       artifactName="K6WorldMaster" functionality="K6testautomation" formStorageClassName="K6WorldMasterS"/>
+   <TcForm typeName="K6WorldRevisionMaster" parentTypeName="ItemRevision Master" typeClassName="Form"
+       description="MasterForm object for &quot;K6WorldRevision&quot; business object"
+       isAbstract="false" artifactName="K6WorldRevisionMaster" functionality="K6testautomation"
+       formStorageClassName="K6WorldRevMasterS"/>
+   <TcForm typeName="K6_PartBOMaster" parentTypeName="Part Master" typeClassName="Form"
+       description="MasterForm object for &quot;K6_PartBO&quot; business object" isAbstract="false"
+       artifactName="K6_PartBOMaster" functionality="K6testautomation" formStorageClassName="K6_PartBOMasterS"/>
+   <TcForm typeName="K6_PartBORevisionMaster" parentTypeName="Part Revision Master"
+       typeClassName="Form" description="MasterForm object for &quot;K6_PartBORevision&quot; business object"
+       isAbstract="false" artifactName="K6_PartBORevisionMaster" functionality="K6testautomation"
+       formStorageClassName="K6_PartBORevMasterS"/>
+   <TcStandardType typeName="K6World" parentTypeName="Item" typeClassName="K6World"
+       description="" isAbstract="false" artifactName="K6World" functionality="K6testautomation"/>
+   <TcStandardType typeName="K6WorldMasterS" parentTypeName="ItemMaster" typeClassName="K6WorldMasterS"
+       description="Form Storage object for &quot;K6WorldMaster&quot; business object"
+       isAbstract="false" artifactName="K6WorldMasterS" functionality="K6testautomation"/>
+   <TcStandardType typeName="K6WorldRevMasterS" parentTypeName="ItemVersionMaster"
+       typeClassName="K6WorldRevMasterS" description="Form Storage object for &quot;K6WorldRevMaster&quot; business object"
+       isAbstract="false" artifactName="K6WorldRevMasterS" functionality="K6testautomation"/>
+   <TcStandardType typeName="K6WorldRevision" parentTypeName="ItemRevision" typeClassName="K6WorldRevision"
+       description="ItemRevision object for &quot;K6World&quot;  business object"
+       isAbstract="false" artifactName="K6WorldRevision" functionality="K6testautomation"/>
+   <TcStandardType typeName="K6_PartBO" parentTypeName="Part" typeClassName="K6_PartBO"
+       description="" isAbstract="false" artifactName="K6_PartBO" functionality="K6testautomation"/>
+   <TcStandardType typeName="K6_PartBOMasterS" parentTypeName="PartMaster" typeClassName="K6_PartBOMasterS"
+       description="Form Storage object for &quot;K6_PartBOMaster&quot; business object"
+       isAbstract="false" artifactName="K6_PartBOMasterS" functionality="K6testautomation"/>
+   <TcStandardType typeName="K6_PartBORevMasterS" parentTypeName="PartVerMaster" typeClassName="K6_PartBORevMasterS"
+       description="Form Storage object for &quot;K6_PartBORevMaster&quot; business object"
+       isAbstract="false" artifactName="K6_PartBORevMasterS" functionality="K6testautomation"/>
+   <TcStandardType typeName="K6_PartBORevision" parentTypeName="Part Revision" typeClassName="K6_PartBORevision"
+       description="ItemRevision object for &quot;K6_PartBO&quot;  business object"
+       isAbstract="false" artifactName="K6_PartBORevision" functionality="K6testautomation"/>
+   <TcPropertyAttach typeName="Awb0Element">
+     <TcProperty propName="bl_K6_PartBORevision_k6_Value" propTypeName="Runtime" propValueType="PROP_string"
+         propMaxStringLength="0" isArray="false" arrayLength="0" description="Property Created to map the property bl_K6_PartBORevision_k6_Value defined on type BOMLine"
+         referencedTypeConstant="" referencedType="" fnd0ReferencingAttrName=""/>
+   </TcPropertyAttach>
+   <TcPropertyAttach typeName="Awb0ConditionalElement">
+     <TcProperty propName="bl_K6_PartBORevision_k6_TotalValue" propTypeName="Runtime"
+         propValueType="PROP_string" propMaxStringLength="0" isArray="false" arrayLength="0"
+         description="Property Created to map the property bl_K6_PartBORevision_k6_TotalValue defined on type BOMLine"
+         referencedTypeConstant="" referencedType="" fnd0ReferencingAttrName=""/>
+   </TcPropertyAttach>
+   <TcGlobalConstantAttach constantName="BOMLineRevConfiguredProperties" value="">
+     <ConstantValue value="K6_PartBORevision"/>
+   </TcGlobalConstantAttach>
+   <TcGlobalConstantAttach constantName="Fnd0BOMLineItemConfigProps" value="">
+     <ConstantValue value="K6_PartBORevision"/>
+   </TcGlobalConstantAttach>
+   <TcGlobalConstantAttach constantName="Fnd0BOMLineRevConfigProps" value="">
+     <ConstantValue value="K6_PartBORevision"/>
+   </TcGlobalConstantAttach>
+   <TcGlobalConstantAttach constantName="Fnd0SelectedLocales" value="en_US"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="K6_PartBO" value="K6_PartBOCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="K6_PartBOMaster" value="K6_PartBOMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="K6_PartBOMasterS" value="K6_PartBOMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="K6_PartBORevision" value="K6_PartBORevisionCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="K6_PartBORevisionMaster"
+       value="K6_PartBORevisionMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="K6_PartBORevMasterS"
+       value="K6_PartBORevMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="K6World" value="K6WorldCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="K6WorldMaster" value="K6WorldMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="K6WorldMasterS" value="K6WorldMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="K6WorldRevision" value="K6WorldRevisionCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="K6WorldRevisionMaster"
+       value="K6WorldRevisionMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="K6WorldRevMasterS" value="K6WorldRevMasterSCreI"/>
+   <TcTypeConstantAttach constantName="ItemRevision" typeName="K6_PartBO" value="K6_PartBORevision"/>
+   <TcTypeConstantAttach constantName="ItemRevision" typeName="K6World" value="K6WorldRevision"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="K6_PartBO" value="K6_PartBOMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="K6_PartBORevision" value="K6_PartBORevisionMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="K6World" value="K6WorldMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="K6WorldRevision" value="K6WorldRevisionMaster"/>
+   <TcTypeConstantAttach constantName="MultiFieldKey" typeName="Design" value="Design{item_id,object_type}"/>
+   <TcTypeConstantAttach constantName="ReviseInput" typeName="K6_PartBORevision" value="K6_PartBORevisionRevI"/>
+   <TcTypeConstantAttach constantName="ReviseInput" typeName="K6WorldRevision" value="K6WorldRevisionRevI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="K6_PartBO" value="K6_PartBOSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="K6_PartBOMaster" value="K6_PartBOMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="K6_PartBOMasterS" value="K6_PartBOMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="K6_PartBORevision" value="K6_PartBORevisionSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="K6_PartBORevisionMaster"
+       value="K6_PartBORevisionMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="K6_PartBORevMasterS"
+       value="K6_PartBORevMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="K6World" value="K6WorldSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="K6WorldMaster" value="K6WorldMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="K6WorldMasterS" value="K6WorldMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="K6WorldRevision" value="K6WorldRevisionSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="K6WorldRevisionMaster"
+       value="K6WorldRevisionMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="K6WorldRevMasterS" value="K6WorldRevMasterSSvAI"/>
+   <TcPropertyConstantAttach constantName="Awb0BOMToOccurrence" typeName="Awb0ConditionalElement"
+       propertyName="bl_K6_PartBORevision_k6_TotalValue" value="bl_K6_PartBORevision_k6_TotalValue"/>
+   <TcPropertyConstantAttach constantName="Awb0BOMToOccurrence" typeName="Awb0Element"
+       propertyName="bl_K6_PartBORevision_k6_Value" value="bl_K6_PartBORevision_k6_Value"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="Awb0ConditionalElement"
+       propertyName="bl_K6_PartBORevision_k6_TotalValue" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="Awb0Element" propertyName="bl_K6_PartBORevision_k6_Value"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_acl_bits"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_active_seq"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_allowable_participant_types"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_altid_list"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_archive_date"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_assignable_participant_types"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0AliasID"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0AlternateID"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0CellProperties"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0ConfiguredRevision"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0IsSuspect"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0Item_item_id"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0MasterFormStorageClass"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0ProcessTemplates"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0RequiredParticipants"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0ShowParticipants"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0ThumbnailImageTicket"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_backup_date"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_based_on"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_BOM_Rollup"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_CAEAnalysis"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_change"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_checked_out"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_checked_out_change_id"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_checked_out_date"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_checked_out_user"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_cls0ClassificationAuditLogs"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Cls0ClassifiedBy"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_cls0IsEnforcementSatisfied"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_cm0ActiveChange"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_cm0AuthoringChangeRevision"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_ContactInCompany"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_creation_date"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_current_desc"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_current_id"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_current_id_context"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_current_id_type"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_current_id_uid"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_current_job"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_current_name"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_current_revision_id"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_date_released"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_declared_options"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_ead_paragraph"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_EC_addressed_by_rel"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_EC_affected_item_rel"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_EC_problem_item_rel"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_EC_reference_item_rel"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_EC_snapshot_rel"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_EC_solution_item_rel"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_effectivity_text"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_epm_proposed_responsible_party"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_epm_proposed_reviewers"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_expl_checkout"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_export_sites"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_external_apps"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fms_tickets"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0_partRev_Fnd0PartDesignAttrs_fnd0AssemblyIndicator"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0ActuatedInteractiveTsks"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0AllWorkflows"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0complying_objects"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0ConfiguredDrawings"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0ContextContrast"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0CurrentChangeContext"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0CurrentEditContext"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0CurrentLocationCode"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0defining_objects"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0DesignToBomRelation"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0Diagram_Attaches"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0DiagramSnapshot"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0DiagramTmplRelation"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0Diameter"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0DigitalSignatureRel"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0DigitalSignAuditLogs"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0DigitalSignObsoleteRel"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0DimensionSource"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0DisclosedModelViewData"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0DisclosedModelViews"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0DisclosedViewList"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0DisclosingObject"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0DocPageTypeRel"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0Drawings"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0DSState"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0EffectivityFormula"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0ExportContent"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0ExtdItemRevMfgAttr"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0ExtdPartDesignRevAttrs"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0ExtdPartRevAttrs"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0GeneralAuditLogs"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0HasEditInContext"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0Height"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0IcsClassNames"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0InProcess"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0IRDCUsed"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0IsCancelled"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0IsCheckoutable"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0IsDesConfigByRevRule"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0IsDescribedByDocument"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0IsDescribedByDrawing"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0IsRevisionDiscontinued"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0Length"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0LicenseExportAuditLogs"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0ListsCustomNotes"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0ListsParamReqments"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0Maturity"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0mfkinfo"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0MyWorkflowTasks"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0objectId"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0OwnedModelViews"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0PartDimension"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0PartFabricationProcess"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0reuseAssembly"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0RevisionId"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupAccuracy"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupArea"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupCoMx"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupCoMy"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupCoMz"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupDensity"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupIsPoIConvntionPos"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupMass"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupMoISpherical"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupMoIxx"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupMoIyy"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupMoIzz"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupPoIxy"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupPoIxz"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupPoIyz"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupVolume"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0SecurityAuditLogs"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0ShapeRelation"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0SiblingRevisions"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0Source"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0SpatialRendering"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0StartedWorkflowTasks"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0StructureAuditLogs"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0StruObjAttrOverride"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0TC_valdata_result"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0ViewCapture"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0Width"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0WorkflowAuditLogs"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_FND_TraceLink"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_gc_updated_from_object_string"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_gde_bvr_list"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_geometric_interfaces"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_gov_classification"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_has_module"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_has_trace_link"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_has_variant_module"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_has_variants"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_HasParticipant"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_ics_classified"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_ics_subclass_name"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_id_dispdefault"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_3D_snap_shot"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_aliasid"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_based_on"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_classification"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_external_object_link"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_manifestation"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_master_form_rev"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_MEMfgModel"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_MEWorkInstruction"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_Motion"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_reference"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_Rendering"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_requirement"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_Simulation"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_snapshot"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_specification"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_UG_altrep"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_UG_expression"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_UG_promotion"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_UG_scenario"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_UG_udf"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_UG_wave_geometry"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_UG_wave_part_link"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_UG_wave_position"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_intent_text"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_interpart_equations"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_interpart_links"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_ip_classification"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_ip_logged"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_is_IRDC"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_is_modifiable"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_is_vi"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_item_id"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_item_master_tag"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_item_revision"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_item_revision_id"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_items_tag"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_last_mod_date"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_last_mod_user"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_last_release_status"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_license_list"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_LocationInCompany"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_lsd"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_mating_constraints"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_MEProcess"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_MESetup"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Mfg0MEConnectorTblFormRel"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Mfg0ResourceSiteDataRel"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_mvl_text"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_null_logical"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_null_string"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_object_application"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_object_desc"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_object_name"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_object_properties"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_object_string"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_object_type"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_owning_group"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_owning_organization"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_owning_project"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_owning_site"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_owning_user"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_parametric_interfaces"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_participants"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_pid"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_process_stage"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_process_stage_list"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_proj_assign_mod_date"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_project_ids"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_project_list"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_projects_list"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_protection"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_ps_children"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_ps_parents"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_publication_sites"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_release_status_list"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_release_statuses"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_representation_for"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_reservation"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_revision_limit"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_revision_list"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_revision_number"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_sequence_anchor"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_sequence_id"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_sequence_limit"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_SimplifiedRendering"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_source"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_structure_revisions"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_Attaches"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_CAE_Criteria"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_CAE_Defining"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_CAE_Include"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_CAE_Param"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_CAE_Results"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_CAE_Source"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_CAE_Target"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_Generic_Architecture"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_Is_Represented_By"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_Primary_Design_Representation"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_ProductManual"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_sst_record"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_Validation"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_WorkContext_Relation"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TCEng_rdv_plmxml_configured"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TCEng_rdv_plmxml_unconfigured"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Thumbnail"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Thumbnail_Source"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_timestamp"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_used_options"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_user_can_unmanage"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_variant_expression_block"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_view"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_VisItemRevCreatedSnapshot2D"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_VisMarkup"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_VisSession"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="BOMLine" propertyName="bl_K6_PartBORevision_wso_thread"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="K6_PartBO" propertyName="k6_Cost"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="K6_PartBO" propertyName="k6_TotalCost"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="K6_PartBORevision" propertyName="k6_Cost"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="K6_PartBORevision" propertyName="k6_customprop"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="K6_PartBORevision" propertyName="k6_Price"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="K6_PartBORevision" propertyName="k6_TotalCost"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="K6_PartBORevision" propertyName="k6_totalcustomprop"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="K6_PartBORevision" propertyName="k6_TotalPrice"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="K6_PartBORevision" propertyName="k6_TotalValue"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="K6_PartBORevision" propertyName="k6_Value"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="K6World" propertyName="k6_Capital"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="K6World" propertyName="k6_Country"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="Awb0ConditionalElement"
+       propertyName="bl_K6_PartBORevision_k6_TotalValue" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="Awb0Element" propertyName="bl_K6_PartBORevision_k6_Value"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_acl_bits"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_active_seq"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_allowable_participant_types"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_altid_list"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_archive_date"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_assignable_participant_types"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0AliasID"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0AlternateID"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0CellProperties"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0ConfiguredRevision"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0IsSuspect"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0Item_item_id"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0MasterFormStorageClass"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0ProcessTemplates"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0RequiredParticipants"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0ShowParticipants"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_awp0ThumbnailImageTicket"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_backup_date"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_based_on"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_BOM_Rollup"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_CAEAnalysis"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_change"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_checked_out"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_checked_out_change_id"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_checked_out_date"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_checked_out_user"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_cls0ClassificationAuditLogs"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Cls0ClassifiedBy"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_cls0IsEnforcementSatisfied"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_cm0ActiveChange"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_cm0AuthoringChangeRevision"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_ContactInCompany"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_creation_date"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_current_desc"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_current_id"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_current_id_context"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_current_id_type"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_current_id_uid"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_current_job"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_current_name"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_current_revision_id"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_date_released"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_declared_options"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_ead_paragraph"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_EC_addressed_by_rel"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_EC_affected_item_rel"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_EC_problem_item_rel"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_EC_reference_item_rel"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_EC_snapshot_rel"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_EC_solution_item_rel"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_effectivity_text"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_epm_proposed_responsible_party"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_epm_proposed_reviewers"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_expl_checkout"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_export_sites"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_external_apps"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fms_tickets"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0_partRev_Fnd0PartDesignAttrs_fnd0AssemblyIndicator"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0ActuatedInteractiveTsks"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0AllWorkflows"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0complying_objects"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0ConfiguredDrawings"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0ContextContrast"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0CurrentChangeContext"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0CurrentEditContext"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0CurrentLocationCode"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0defining_objects"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0DesignToBomRelation"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0Diagram_Attaches"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0DiagramSnapshot"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0DiagramTmplRelation"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0Diameter"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0DigitalSignatureRel"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0DigitalSignAuditLogs"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0DigitalSignObsoleteRel"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0DimensionSource"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0DisclosedModelViewData"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0DisclosedModelViews"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0DisclosedViewList"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0DisclosingObject"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0DocPageTypeRel"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0Drawings"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0DSState"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0EffectivityFormula"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0ExportContent"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0ExtdItemRevMfgAttr"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0ExtdPartDesignRevAttrs"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0ExtdPartRevAttrs"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0GeneralAuditLogs"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0HasEditInContext"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0Height"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0IcsClassNames"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0InProcess"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0IRDCUsed"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0IsCancelled"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0IsCheckoutable"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0IsDesConfigByRevRule"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0IsDescribedByDocument"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0IsDescribedByDrawing"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0IsRevisionDiscontinued"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0Length"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0LicenseExportAuditLogs"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0ListsCustomNotes"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0ListsParamReqments"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0Maturity"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0mfkinfo"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0MyWorkflowTasks"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0objectId"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0OwnedModelViews"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0PartDimension"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0PartFabricationProcess"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0reuseAssembly"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0RevisionId"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupAccuracy"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupArea"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupCoMx"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupCoMy"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupCoMz"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupDensity"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupIsPoIConvntionPos"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupMass"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupMoISpherical"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupMoIxx"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupMoIyy"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupMoIzz"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupPoIxy"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupPoIxz"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupPoIyz"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0rollupVolume"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0SecurityAuditLogs"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0ShapeRelation"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0SiblingRevisions"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0Source"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0SpatialRendering"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0StartedWorkflowTasks"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0StructureAuditLogs"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0StruObjAttrOverride"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0TC_valdata_result"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Fnd0ViewCapture"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0Width"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_fnd0WorkflowAuditLogs"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_FND_TraceLink"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_gc_updated_from_object_string"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_gde_bvr_list"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_geometric_interfaces"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_gov_classification"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_has_module"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_has_trace_link"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_has_variant_module"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_has_variants"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_HasParticipant"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_ics_classified"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_ics_subclass_name"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_id_dispdefault"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_3D_snap_shot"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_aliasid"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_based_on"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_classification"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_external_object_link"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_manifestation"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_master_form_rev"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_MEMfgModel"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_MEWorkInstruction"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_Motion"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_reference"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_Rendering"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_requirement"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_Simulation"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_snapshot"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_specification"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_UG_altrep"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_UG_expression"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_UG_promotion"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_UG_scenario"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_UG_udf"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_UG_wave_geometry"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_UG_wave_part_link"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_IMAN_UG_wave_position"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_intent_text"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_interpart_equations"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_interpart_links"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_ip_classification"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_ip_logged"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_is_IRDC"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_is_modifiable"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_is_vi"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_item_id"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_item_master_tag"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_item_revision"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_item_revision_id"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_items_tag"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_last_mod_date"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_last_mod_user"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_last_release_status"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_license_list"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_LocationInCompany"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_lsd"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_mating_constraints"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_MEProcess"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_MESetup"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Mfg0MEConnectorTblFormRel"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Mfg0ResourceSiteDataRel"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_mvl_text"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_null_logical"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_null_string"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_object_application"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_object_desc"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_object_name"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_object_properties"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_object_string"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_object_type"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_owning_group"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_owning_organization"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_owning_project"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_owning_site"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_owning_user"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_parametric_interfaces"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_participants"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_pid"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_process_stage"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_process_stage_list"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_proj_assign_mod_date"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_project_ids"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_project_list"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_projects_list"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_protection"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_ps_children"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_ps_parents"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_publication_sites"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_release_status_list"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_release_statuses"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_representation_for"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_reservation"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_revision_limit"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_revision_list"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_revision_number"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_sequence_anchor"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_sequence_id"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_sequence_limit"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_SimplifiedRendering"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_source"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_structure_revisions"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_Attaches"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_CAE_Criteria"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_CAE_Defining"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_CAE_Include"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_CAE_Param"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_CAE_Results"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_CAE_Source"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_CAE_Target"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_Generic_Architecture"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_Is_Represented_By"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_Primary_Design_Representation"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_ProductManual"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_sst_record"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_Validation"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TC_WorkContext_Relation"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TCEng_rdv_plmxml_configured"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_TCEng_rdv_plmxml_unconfigured"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Thumbnail"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_Thumbnail_Source"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_timestamp"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_used_options"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_user_can_unmanage"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_variant_expression_block"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_view"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_VisItemRevCreatedSnapshot2D"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_VisMarkup"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_VisSession"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="BOMLine" propertyName="bl_K6_PartBORevision_wso_thread"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="K6_PartBO" propertyName="k6_Cost"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="K6_PartBO" propertyName="k6_TotalCost"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="K6_PartBORevision"
+       propertyName="k6_Cost" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="K6_PartBORevision"
+       propertyName="k6_customprop" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="K6_PartBORevision"
+       propertyName="k6_Price" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="K6_PartBORevision"
+       propertyName="k6_TotalCost" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="K6_PartBORevision"
+       propertyName="k6_totalcustomprop" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="K6_PartBORevision"
+       propertyName="k6_TotalPrice" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="K6_PartBORevision"
+       propertyName="k6_TotalValue" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="K6_PartBORevision"
+       propertyName="k6_Value" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="K6World" propertyName="k6_Capital"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="K6World" propertyName="k6_Country"
+       value="Write"/>
+   <TcLOV name="K6_Capital" lovType="ListOfValuesString" usage="Exhaustive" description="">
+     <TcLOVValue value="Paris" description="" conditionName="isTrue"/>
+     <TcLOVValue value="New Delhi" description="" conditionName="isTrue"/>
+     <TcLOVValue value="Washington" description="" conditionName="isTrue"/>
+     <TcLOVValue value="D.C" description="" conditionName="isTrue"/>
+   </TcLOV>
+   <TcLOV name="K6_Country" lovType="ListOfValuesString" usage="Exhaustive" description="">
+     <TcLOVValue value="India" description="" conditionName="isTrue"/>
+     <TcLOVValue value="France" description="" conditionName="isTrue"/>
+     <TcLOVValue value="USA" description="" conditionName="isTrue"/>
+   </TcLOV>
+   <TcLOVAttach lovName="K6_Capital" typeName="K6World">
+     <TcLOVAttachPropertyInfo valuePropertyName="k6_Capital" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <TcLOVAttach lovName="K6_Country" typeName="K6World">
+     <TcLOVAttachPropertyInfo valuePropertyName="k6_Country" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <Functionality name="K6testautomation" displayName="Test_Automation" enabledForVerificationRules="false"
+       description="Component for the template - k6testautomation"/>
+   <PropertyFormatter name="K6_custom_double_formatter" description="" datatype="Double"
+       formatstring="#,###.##"/>
+   <PropertyFormatterAttach formatterName="K6_custom_double_formatter" typeName="K6_PartBORevision"
+       propertyName="k6_customprop" conditionName="isTrue"/>
+   <PropertyFormatterAttach formatterName="K6_custom_double_formatter" typeName="K6_PartBORevision"
+       propertyName="k6_totalcustomprop" conditionName="isTrue"/>
+   <PropertyFormatterAttach formatterName="K6_custom_double_formatter" typeName="K6_PartBORevision"
+       propertyName="k6_TotalValue" conditionName="isTrue"/>
+   <PropertyFormatterAttach formatterName="K6_custom_double_formatter" typeName="K6_PartBORevision"
+       propertyName="k6_Value" conditionName="isTrue"/>
+</Add>
+</TcBusinessData>

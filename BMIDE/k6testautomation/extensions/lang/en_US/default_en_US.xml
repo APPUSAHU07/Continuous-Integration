@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TcBusinessDataLocalization xmlns="http://teamcenter.com/BusinessModel/TcBusinessDataLocalization"
+    Date="">
+<Add>
+   <key locale="en_US" id="BusinessObject{::}K6WorldMasterS" status="Approved">World Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}K6WorldMaster" status="Approved">World Master</key>
+   <key locale="en_US" id="BusinessObject{::}K6WorldRevMasterS" status="Approved">World Revision Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}K6WorldRevisionMaster" status="Approved">World Revision Master</key>
+   <key locale="en_US" id="BusinessObject{::}K6WorldRevision" status="Approved">World Revision</key>
+   <key locale="en_US" id="BusinessObject{::}K6World" status="Approved">World</key>
+   <key locale="en_US" id="BusinessObject{::}K6_PartBOMasterS" status="Approved">Part BO Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}K6_PartBOMaster" status="Approved">Part BO Master</key>
+   <key locale="en_US" id="BusinessObject{::}K6_PartBORevMasterS" status="Approved">Part BO Revision Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}K6_PartBORevisionMaster" status="Approved">Part BO Revision Master</key>
+   <key locale="en_US" id="BusinessObject{::}K6_PartBORevision" status="Approved">Part BO Revision</key>
+   <key locale="en_US" id="BusinessObject{::}K6_PartBO" status="Approved">Part BO</key>
+   <key locale="en_US" id="LOVValue{::}K6_Capital{::}D.C" status="Approved">D.C</key>
+   <key locale="en_US" id="LOVValue{::}K6_Capital{::}New Delhi" status="Approved">New Delhi</key>
+   <key locale="en_US" id="LOVValue{::}K6_Capital{::}Paris" status="Approved">Paris</key>
+   <key locale="en_US" id="LOVValue{::}K6_Capital{::}Washington" status="Approved">Washington</key>
+   <key locale="en_US" id="LOVValue{::}K6_Country{::}France" status="Approved">France</key>
+   <key locale="en_US" id="LOVValue{::}K6_Country{::}India" status="Approved">India</key>
+   <key locale="en_US" id="LOVValue{::}K6_Country{::}USA" status="Approved">USA</key>
+   <key locale="en_US" id="PropertyFormatString{::}K6_custom_double_formatter" status="Approved">#,###.##</key>
+   <key locale="en_US" id="Property{::}K6World{::}k6_Capital" status="Approved">Capital</key>
+   <key locale="en_US" id="Property{::}K6World{::}k6_Country" status="Approved">Country</key>
+   <key locale="en_US" id="Property{::}K6_PartBORevision{::}k6_Cost" status="Approved">Cost</key>
+   <key locale="en_US" id="Property{::}K6_PartBORevision{::}k6_Price" status="Approved">Price</key>
+   <key locale="en_US" id="Property{::}K6_PartBORevision{::}k6_TotalCost" status="Approved">Total Cost</key>
+   <key locale="en_US" id="Property{::}K6_PartBORevision{::}k6_TotalPrice" status="Approved">Total Price</key>
+   <key locale="en_US" id="Property{::}K6_PartBORevision{::}k6_TotalValue" status="Approved">Total Value</key>
+   <key locale="en_US" id="Property{::}K6_PartBORevision{::}k6_Value" status="Approved">Value</key>
+   <key locale="en_US" id="Property{::}K6_PartBORevision{::}k6_customprop" status="Approved">customprop</key>
+   <key locale="en_US" id="Property{::}K6_PartBORevision{::}k6_totalcustomprop" status="Approved">totalcustomprop</key>
+   <key locale="en_US" id="Property{::}K6_PartBO{::}k6_Cost" status="Approved">Cost</key>
+   <key locale="en_US" id="Property{::}K6_PartBO{::}k6_TotalCost" status="Approved">Total Cost</key>
+</Add>
+</TcBusinessDataLocalization>

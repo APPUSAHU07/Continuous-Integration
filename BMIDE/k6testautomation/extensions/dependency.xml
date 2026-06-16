@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TcBusinessDataIncludes currentTemplateVersion="2512.0_0" displayName="Test_Automation" enableOpsDataDeploy="true" guid="A4E51F1298BB6CBD101BDA9EC46363AB" isDescriptionMandatory="false" name="k6testautomation" optional="true" prefixes="K6" teamcenterTemplate="false">
+    <include file="foundation_template.xml"/>
+    <include file="aps0apscore_template.xml"/>
+    <include file="aws2_template.xml"/>
+    <include file="cla0classification_template.xml"/>
+    <include file="cm_template.xml"/>
+    <include file="srh0apsconfiguredsearch_template.xml"/>
+    <include file="translationservice_template.xml"/>
+    <include file="aa1activearchitectcore_template.xml"/>
+    <include file="activeworkspacebom_template.xml"/>
+    <include file="adm1admconsolecore_template.xml"/>
+    <include file="appmodel_template.xml"/>
+    <include file="aut0authorizationaws_template.xml"/>
+    <include file="bcs0buildconditions_template.xml"/>
+    <include file="csi_template.xml"/>
+    <include file="dds0datadiscovery_template.xml"/>
+    <include file="dma1docmgmtaw_template.xml"/>
+    <include file="rb0reportingaw_template.xml"/>
+    <include file="sub0subscription_template.xml"/>
+    <include file="tie0aw_template.xml"/>
+    <include file="um0usermanagement_template.xml"/>
+    <include file="Cm1cmaws_template.xml"/>
+    <include file="fgc0cm4g_template.xml"/>
+    <include file="realization_template.xml"/>
+    <include file="partition_template.xml"/>
+    <include file="rzc0rlzcm_template.xml"/>
+    <include file="classification_template.xml"/>
+</TcBusinessDataIncludes>
