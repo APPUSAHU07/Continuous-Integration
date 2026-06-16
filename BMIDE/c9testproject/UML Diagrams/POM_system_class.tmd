@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<com.teamcenter.graphmodel:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.teamcenter.bmide.foundation.core="http:///com/teamcenter/bmide/foundation/core/model/tcmodel.ecore" xmlns:com.teamcenter.bmide.server.uml.viewmodel="http:///com.teamcenter.bmide.server.uml.viewmodel/viewmodel.ecore" xmlns:com.teamcenter.graphmodel="http:///com/teamcenter/graphmodel/graphmodel.ecore">
+  <contents xsi:type="com.teamcenter.bmide.server.uml.viewmodel:NamedElementViewNode" location="300,100">
+    <modelObject xsi:type="com.teamcenter.bmide.foundation.core:TcStandardType" href="../../TcModelGhostFilePath#TcStandardType/POM_system_class"/>
+  </contents>
+</com.teamcenter.graphmodel:Diagram>

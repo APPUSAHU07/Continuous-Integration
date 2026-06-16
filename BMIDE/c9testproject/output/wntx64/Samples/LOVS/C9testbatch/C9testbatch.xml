@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TcBusinessData xmlns="http://teamcenter.com/BusinessModel/TcBusinessData" batchXSDVersion="1.0"
+    Date="Tue Dec 23 12:26:56 PM 2025"
+>
+<!--This file can be used to update the LOV values and sub-LOV attachments on LOV: C9testbatch. 
+1. Please ensure that the LOV has been deployed to the Teamcenter Server.  
+2. Modify this file by replacing the commented code below with your values. 
+3. Modify the localization files in the lang folder by replacing the commented code with your values. 
+4. Run the command: 
+bmide_manage_batch_lovs -u=<username> -p=<password> -g=<group> -option=update -file=<BMIDE Project Folder>\output\wntx64\Samples\LOVS\C9testbatch\C9testbatch.xml.-->
+
+  <Add>
+<!--The following sub-LOV attachment, enclosed in comments, is there as a sample. You can replace it by your own sub-LOV attachments, for creating cascading LOVs.-->
+<!--
+<TcLOVValueSubLOVAttach conditionName="isTrue" subLOVName="SampleSubLOV" targetLOVName="C9testbatch" targetValue="SampleLOVValue"/>
+-->
+  </Add>
+  <Change>
+    <TcLOV name="C9testbatch" lovType="ListOfValuesString" usage="Exhaustive" description=""
+        isManagedExternally="true">
+<!--The following LOV values, enclosed in comments, are there as a sample. You can replace them by your own LOV values.-->
+<!--
+<TcLOVValue value="SampleValueOne" description="Sample Description One" conditionName="isTrue" />
+<TcLOVValue value="SampleValueTwo" description="Sample Description Two" conditionName="isTrue" />
+<TcLOVValue value="SampleValueThree" description="Sample Description Three" conditionName="isTrue" />
+-->
+    </TcLOV>
+  </Change>
+</TcBusinessData>

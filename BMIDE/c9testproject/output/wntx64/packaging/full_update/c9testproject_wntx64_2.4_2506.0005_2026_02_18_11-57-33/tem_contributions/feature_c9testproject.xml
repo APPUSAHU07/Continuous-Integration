@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    Document   : feature_c9testproject.xml
+    Description: This XML is used by TEM to install or upgrade the "c9testproject" solution.
+-->
+<feature>
+    <name value="testproject"/>
+    <property name="feature_name" value="c9testproject"/>
+    <group value="package"/>
+    <guid value="D98F54AAFF129CDC890E3D579F06FBEB"/>
+    <bundle value="${feature_name}Bundle.xml"/>
+    <description value="${feature_name}.description"/>
+    <include file="dataModelDependency.xml"/>
+    <relation/>
+    <feature>
+        <!--  Feature: Data Model -->
+        <name value="Data Model"/>
+        <property name="feature_id" value="datamodel"/>
+        <property name="bmide_optional" value="false"/>
+        <property name="template_name" value="${feature_name}"/>
+        <property name="template_file" value="${template_name}_template.xml"/>
+        <root value="true"/>
+        <bundle value="${template_name}Bundle.xml"/>
+        <description value="${template_name}.description"/>
+        <guid value="1CA3102D278AF17A7286ABC9B754CA98"/>
+        <include file="coreDataModel2.xml"/>
+        <include file="generatePlmxmlSchema.xml"/>
+    </feature>
+    <feature>
+        <!--   Feature: Runtime Server -->
+        <name value="Runtime Server"/>
+        <property name="feature_id" value="rtserver"/>
+        <property name="bmide_optional" value="true"/>
+        <bundle value="${feature_name}Bundle.xml"/>
+        <description value="${feature_name}.description"/>
+        <guid value="BF4662F1DF9F4ABE6A2910A368EAD737"/>
+        <!-- Set to true/false if there is an rtserver component   -->
+        <property name="template_rtserver" value="false"/>
+        <property name="rtserver_file" value="${feature_name}_rtserver.zip"/>
+        <files>
+            <code>
+                <unzip file="${rtserver_file}"/>
+            </code>
+        </files>
+        <install>
+            <code>
+                <textserver file="emh_text.xml" include="${feature_name}_errors.xml"/>
+                <textserver file="tc_text.xml" include="${feature_name}_text.xml"/>
+            </code>
+        </install>
+        <upgrade>
+            <code>
+                <textserver file="emh_text.xml" include="${feature_name}_errors.xml"/>
+                <textserver file="tc_text.xml" include="${feature_name}_text.xml"/>
+            </code>
+        </upgrade>
+    </feature>
+    <dependencyReferences>
+        <reference name="foundation" value="8C061DD51E13E0CB9DC4687B1A3348BE"/>
+    </dependencyReferences>
+</feature>

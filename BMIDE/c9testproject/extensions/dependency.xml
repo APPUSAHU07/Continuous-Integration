@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TcBusinessDataIncludes ActiveRelease="tc2506" currentTemplateVersion="2312.0_0" displayName="testproject" enableOpsDataDeploy="true" guid="1CA3102D278AF17A7286ABC9B754CA98" isDescriptionMandatory="false" name="c9testproject" optional="true" prefixes="C9" teamcenterTemplate="false">
+    <include file="foundation_template.xml"/>
+</TcBusinessDataIncludes>

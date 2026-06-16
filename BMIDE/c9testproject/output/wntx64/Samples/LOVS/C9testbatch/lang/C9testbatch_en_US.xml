@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TcBusinessDataLocalization xmlns="http://teamcenter.com/BusinessModel/TcBusinessDataLocalization"
+    batchXSDVersion="1.0" Date="Tue Dec 23 12:26:56 PM 2025"
+>
+<!--This file can be used to update the LOV Value and Description localizations for LOV: C9testbatch. 
+1. Please ensure that the LOV has been deployed to the Teamcenter Server. 
+2. Modify the LOV data file at <BMIDE Project Folder>\output\wntx64\Samples\LOVS\C9testbatch\C9testbatch.xml by replacing the commented code with your values. 
+3. Modify the localization files in the lang folder by replacing the commented code with your values. 
+4. Run the command: 
+bmide_manage_batch_lovs -u=<username> -p=<password> -g=<group> -option=update -file=<BMIDE Project Folder>\output\wntx64\Samples\LOVS\C9testbatch\C9testbatch.xml.-->
+
+  <Add>
+<!--The following LOV value localizations, enclosed in comments, are there as a sample. You can replace them by your own LOV value localizations.-->
+<!--
+<key locale="en_US" id="LOVValue{::}C9testbatch{::}SampleValueOne" status="Approved">Sample Localization One</key>
+<key locale="en_US" id="LOVValue{::}C9testbatch{::}SampleValueTwo" status="Approved">Sample Localization Two</key>
+<key locale="en_US" id="LOVValue{::}C9testbatch{::}SampleValueThree" status="Approved">Sample Localization Three</key>
+-->
+<!--The following LOV value description localizations, enclosed in comments, are there as a sample. You can replace them by your own LOV value description localizations.-->
+<!--
+<key locale="en_US" id="LOVValueDescription{::}C9testbatch{::}SampleValueOne" status="Approved">Sample Description Localization One</key>
+<key locale="en_US" id="LOVValueDescription{::}C9testbatch{::}SampleValueTwo" status="Approved">Sample Description Localization Two</key>
+<key locale="en_US" id="LOVValueDescription{::}C9testbatch{::}SampleValueThree" status="Approved">Sample Description Localization Three</key>
+-->
+  </Add>
+</TcBusinessDataLocalization>

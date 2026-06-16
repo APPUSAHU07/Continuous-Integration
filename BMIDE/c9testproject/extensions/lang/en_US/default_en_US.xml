@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TcBusinessDataLocalization xmlns="http://teamcenter.com/BusinessModel/TcBusinessDataLocalization"
+    Date="">
+<Add>
+   <key locale="en_US" id="BusinessObject{::}C9customAMasterS" status="Approved">custom A Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}C9customAMaster" status="Approved">custom A Master</key>
+   <key locale="en_US" id="BusinessObject{::}C9customARevMasterS" status="Approved">custom A Revision Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}C9customARevisionMaster" status="Approved">custom A Revision Master</key>
+   <key locale="en_US" id="BusinessObject{::}C9customARevision" status="Approved">custom A Revision</key>
+   <key locale="en_US" id="BusinessObject{::}C9customA" status="Approved">custom A</key>
+   <key locale="en_US" id="BusinessObject{::}C9customBMasterS" status="Approved">custom B Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}C9customBMaster" status="Approved">custom B Master</key>
+   <key locale="en_US" id="BusinessObject{::}C9customBRevMasterS" status="Approved">custom B Revision Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}C9customBRevisionMaster" status="Approved">custom B Revision Master</key>
+   <key locale="en_US" id="BusinessObject{::}C9customBRevision" status="Approved">custom B Revision</key>
+   <key locale="en_US" id="BusinessObject{::}C9customB" status="Approved">custom B</key>
+   <key locale="en_US" id="BusinessObject{::}C9customCMasterS" status="Approved">custom C Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}C9customCMaster" status="Approved">custom C Master</key>
+   <key locale="en_US" id="BusinessObject{::}C9customCRevMasterS" status="Approved">custom C Revision Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}C9customCRevisionMaster" status="Approved">custom C Revision Master</key>
+   <key locale="en_US" id="BusinessObject{::}C9customCRevision" status="Approved">custom C Revision</key>
+   <key locale="en_US" id="BusinessObject{::}C9customC" status="Approved">custom C</key>
+   <key locale="en_US" id="BusinessObject{::}C9testIDgen" status="Approved">test I D gen</key>
+   <key locale="en_US" id="BusinessObject{::}C9testitemMasterS" status="Approved">testitem Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}C9testitemMaster" status="Approved">testitem Master</key>
+   <key locale="en_US" id="BusinessObject{::}C9testitemRevMasterS" status="Approved">testitem Revision Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}C9testitemRevisionMaster" status="Approved">testitem Revision Master</key>
+   <key locale="en_US" id="BusinessObject{::}C9testitemRevision" status="Approved">testitem Revision</key>
+   <key locale="en_US" id="BusinessObject{::}C9testitem" status="Approved">testitem</key>
+   <key locale="en_US" id="BusinessObject{::}C9testrelation" status="Approved">testrelation</key>
+   <key locale="en_US" id="LOVValue{::}C9_MakeBuy{::}Buy" status="Approved">Buy</key>
+   <key locale="en_US" id="LOVValue{::}C9_MakeBuy{::}Make" status="Approved">Make</key>
+   <key locale="en_US" id="LOVValue{::}C9_department{::}BS" status="Approved">Body Shop</key>
+   <key locale="en_US" id="LOVValue{::}C9_department{::}PS" status="Approved">Paint Shop</key>
+   <key locale="en_US" id="LOVValue{::}C9_productline{::}CV" status="Approved">Commercial Vehicles</key>
+   <key locale="en_US" id="LOVValue{::}C9_productline{::}PV" status="Approved">Passenger Vehicles</key>
+   <key locale="en_US" id="LOVValue{::}C9_unit{::}AM" status="Approved">Americas</key>
+   <key locale="en_US" id="LOVValue{::}C9_unit{::}AP" status="Approved">Asia Pacific</key>
+   <key locale="en_US" id="LOVValue{::}C9_unit{::}CH" status="Approved">China</key>
+   <key locale="en_US" id="LOVValue{::}C9_unit{::}EU" status="Approved">Europe</key>
+   <key locale="en_US" id="LOVValue{::}C9testclassic_country{::}INDIA" status="Approved">INDIA</key>
+   <key locale="en_US" id="LOVValue{::}C9testclassic_country{::}USA" status="Approved">USA</key>
+   <key locale="en_US" id="LOVValue{::}C9testclassic_states{::}KARNATAKA" status="Approved">KARNATAKA</key>
+   <key locale="en_US" id="LOVValue{::}C9testclassic_states{::}TELANGANA" status="Approved">TELANGANA</key>
+   <key locale="en_US" id="Property{::}C9customARevMasterS{::}c9Parent_ID" status="Approved">Parent ID</key>
+   <key locale="en_US" id="Property{::}C9customARevMasterS{::}c9TestProp" status="Approved">Test Prop</key>
+   <key locale="en_US" id="Property{::}C9customARevisionMaster{::}c9Parent_ID" status="Approved">Parent ID</key>
+   <key locale="en_US" id="Property{::}C9customARevisionMaster{::}c9TestProp" status="Approved">Test Prop</key>
+   <key locale="en_US" id="Property{::}C9customARevision{::}c9Boolean_Property" status="Approved">Boolean Property</key>
+   <key locale="en_US" id="Property{::}C9customA{::}c9Boolean_Property" status="Approved">Boolean Property</key>
+   <key locale="en_US" id="Property{::}C9customBRevMasterS{::}c9Parent_ID" status="Approved">Parent ID</key>
+   <key locale="en_US" id="Property{::}C9customBRevisionMaster{::}c9Parent_ID" status="Approved">Parent ID</key>
+   <key locale="en_US" id="Property{::}C9customCRevMasterS{::}c9Parent_ID" status="Approved">Parent ID</key>
+   <key locale="en_US" id="Property{::}C9customCRevisionMaster{::}c9Parent_ID" status="Approved">Parent ID</key>
+   <key locale="en_US" id="Property{::}C9testIDgen{::}c9_Department" status="Approved">Department</key>
+   <key locale="en_US" id="Property{::}C9testIDgen{::}c9_MakeBuy" status="Approved">Make/Buy</key>
+   <key locale="en_US" id="Property{::}C9testIDgen{::}c9_ProductLine" status="Approved">Product Line</key>
+   <key locale="en_US" id="Property{::}C9testIDgen{::}c9_Unit" status="Approved">Unit</key>
+   <key locale="en_US" id="Property{::}C9testitemRevision{::}c9testcompound" status="Approved">testcompound</key>
+   <key locale="en_US" id="Property{::}C9testitemRevision{::}c9testdouble" status="Approved">testdouble</key>
+   <key locale="en_US" id="Property{::}C9testitem{::}c9teststring" status="Approved">teststring</key>
+</Add>
+</TcBusinessDataLocalization>

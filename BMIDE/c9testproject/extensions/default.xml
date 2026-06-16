@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TcBusinessData xmlns="http://teamcenter.com/BusinessModel/TcBusinessData" Date="">
+<Add>
+   <Library name="C9testlib" createRelease="tc2506" serviceLibrary="false" namespace=""
+       isThirdParty="false">
+     <DependentOn name="metaframework"/>
+     <DependentOn name="sa"/>
+     <DependentOn name="tccore"/>
+     <DependentOn name="tc"/>
+     <DependentOn name="cxpom"/>
+     <DependentOn name="epm"/>
+     <DependentOn name="ae"/>
+     <DependentOn name="grm"/>
+     <DependentOn name="cfm"/>
+     <DependentOn name="bom"/>
+     <DependentOn name="ps"/>
+   </Library>
+   <TcClass className="C9customA" parentClassName="Item" isExportable="false" isUninstantiable="false"
+       isUninheritable="false" description="">
+     <TcAttribute attributeName="c9Boolean_Property" description="" attributeType="POM_logical"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false"/>
+   </TcClass>
+   <TcClass className="C9customAMasterS" parentClassName="ItemMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="C9customARevMasterS" parentClassName="ItemVersionMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description="">
+     <TcAttribute attributeName="c9Parent_ID" description="" attributeType="POM_int"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="c9TestProp" description="" attributeType="POM_string"
+         maxStringLength="128" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+   </TcClass>
+   <TcClass className="C9customARevision" parentClassName="ItemRevision" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description="">
+     <TcAttribute attributeName="c9Boolean_Property" description="" attributeType="POM_logical"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false"/>
+   </TcClass>
+   <TcClass className="C9customB" parentClassName="Item" isExportable="false" isUninstantiable="false"
+       isUninheritable="false" description=""/>
+   <TcClass className="C9customBMasterS" parentClassName="ItemMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="C9customBRevMasterS" parentClassName="ItemVersionMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description="">
+     <TcAttribute attributeName="c9Parent_ID" description="" attributeType="POM_int"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+   </TcClass>
+   <TcClass className="C9customBRevision" parentClassName="ItemRevision" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="C9customC" parentClassName="Item" isExportable="false" isUninstantiable="false"
+       isUninheritable="false" description=""/>
+   <TcClass className="C9customCMasterS" parentClassName="ItemMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="C9customCRevMasterS" parentClassName="ItemVersionMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description="">
+     <TcAttribute attributeName="c9Parent_ID" description="" attributeType="POM_int"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+   </TcClass>
+   <TcClass className="C9customCRevision" parentClassName="ItemRevision" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="C9testitem" parentClassName="Item" isExportable="false" isUninstantiable="false"
+       isUninheritable="false" description="">
+     <TcAttribute attributeName="c9teststring" description="" attributeType="POM_string"
+         maxStringLength="128" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+   </TcClass>
+   <TcClass className="C9testitemMasterS" parentClassName="ItemMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="C9testitemRevMasterS" parentClassName="ItemVersionMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="C9testitemRevision" parentClassName="ItemRevision" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description="">
+     <TcAttribute attributeName="c9testdouble" description="" attributeType="POM_double"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+   </TcClass>
+   <TcClass className="C9testrelation" parentClassName="ImanRelation" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <OperationInputType typeName="C9customACreI" parentTypeName="ItemCreI" typeClassName="C9customACreI"
+       description="CreateInput object for &quot;C9customA&quot; business object"
+       isAbstract="false" artifactName="C9customACreI">
+     <OperationInputProperty propName="c9Boolean_Property" compoundObjectConstant=""
+         srcPropName="c9Boolean_Property" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+   </OperationInputType>
+   <OperationInputType typeName="C9customAMasterCreI" parentTypeName="Item MasterCreI"
+       typeClassName="C9customAMasterCreI" description="CreateInput object for &quot;C9customAMaster&quot; business object"
+       isAbstract="false" artifactName="C9customAMasterCreI"/>
+   <OperationInputType typeName="C9customAMasterSCreI" parentTypeName="ItemMasterCreI"
+       typeClassName="C9customAMasterSCreI" description="CreateInput object for &quot;C9customAMasterS&quot; business object"
+       isAbstract="false" artifactName="C9customAMasterSCreI"/>
+   <OperationInputType typeName="C9customAMasterSSvAI" parentTypeName="ItemMasterSvAI"
+       typeClassName="C9customAMasterSSvAI" description="SaveAsInput object for &quot;C9customAMasterS&quot; business object"
+       isAbstract="false" artifactName="C9customAMasterSSvAI"/>
+   <OperationInputType typeName="C9customAMasterSvAI" parentTypeName="Item MasterSvAI"
+       typeClassName="C9customAMasterSvAI" description="SaveAsInput object for &quot;C9customAMaster&quot; business object"
+       isAbstract="false" artifactName="C9customAMasterSvAI"/>
+   <OperationInputType typeName="C9customARevMasterSCreI" parentTypeName="ItemVersionMasterCreI"
+       typeClassName="C9customARevMasterSCreI" description="CreateInput object for &quot;C9customARevMasterS&quot; business object"
+       isAbstract="false" artifactName="C9customARevMasterSCreI"/>
+   <OperationInputType typeName="C9customARevMasterSSvAI" parentTypeName="ItemVersionMasterSvAI"
+       typeClassName="C9customARevMasterSSvAI" description="SaveAsInput object for &quot;C9customARevMasterS&quot; business object"
+       isAbstract="false" artifactName="C9customARevMasterSSvAI"/>
+   <OperationInputType typeName="C9customARevisionCreI" parentTypeName="ItemRevisionCreI"
+       typeClassName="C9customARevisionCreI" description="CreateInput object for &quot;C9customARevision&quot; business object"
+       isAbstract="false" artifactName="C9customARevisionCreI">
+     <OperationInputProperty propName="c9Boolean_Property" compoundObjectConstant=""
+         srcPropName="c9Boolean_Property" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+   </OperationInputType>
+   <OperationInputType typeName="C9customARevisionMasterCreI" parentTypeName="ItemRevision MasterCreI"
+       typeClassName="C9customARevisionMasterCreI" description="CreateInput object for &quot;C9customARevisionMaster&quot; business object"
+       isAbstract="false" artifactName="C9customARevisionMasterCreI"/>
+   <OperationInputType typeName="C9customARevisionMasterSvAI" parentTypeName="ItemRevision MasterSvAI"
+       typeClassName="C9customARevisionMasterSvAI" description="SaveAsInput object for &quot;C9customARevisionMaster&quot; business object"
+       isAbstract="false" artifactName="C9customARevisionMasterSvAI"/>
+   <OperationInputType typeName="C9customARevisionRevI" parentTypeName="ItemRevisionRevI"
+       typeClassName="C9customARevisionRevI" description="ReviseInput object for &quot;C9customARevision&quot; business object"
+       isAbstract="false" artifactName="C9customARevisionRevI"/>
+   <OperationInputType typeName="C9customARevisionSvAI" parentTypeName="ItemRevisionSvAI"
+       typeClassName="C9customARevisionSvAI" description="SaveAsInput object for &quot;C9customARevision&quot; business object"
+       isAbstract="false" artifactName="C9customARevisionSvAI"/>
+   <OperationInputType typeName="C9customASvAI" parentTypeName="ItemSvAI" typeClassName="C9customASvAI"
+       description="SaveAsInput object for &quot;C9customA&quot; business object"
+       isAbstract="false" artifactName="C9customASvAI"/>
+   <OperationInputType typeName="C9customBCreI" parentTypeName="ItemCreI" typeClassName="C9customBCreI"
+       description="CreateInput object for &quot;C9customB&quot; business object"
+       isAbstract="false" artifactName="C9customBCreI"/>
+   <OperationInputType typeName="C9customBMasterCreI" parentTypeName="Item MasterCreI"
+       typeClassName="C9customBMasterCreI" description="CreateInput object for &quot;C9customBMaster&quot; business object"
+       isAbstract="false" artifactName="C9customBMasterCreI"/>
+   <OperationInputType typeName="C9customBMasterSCreI" parentTypeName="ItemMasterCreI"
+       typeClassName="C9customBMasterSCreI" description="CreateInput object for &quot;C9customBMasterS&quot; business object"
+       isAbstract="false" artifactName="C9customBMasterSCreI"/>
+   <OperationInputType typeName="C9customBMasterSSvAI" parentTypeName="ItemMasterSvAI"
+       typeClassName="C9customBMasterSSvAI" description="SaveAsInput object for &quot;C9customBMasterS&quot; business object"
+       isAbstract="false" artifactName="C9customBMasterSSvAI"/>
+   <OperationInputType typeName="C9customBMasterSvAI" parentTypeName="Item MasterSvAI"
+       typeClassName="C9customBMasterSvAI" description="SaveAsInput object for &quot;C9customBMaster&quot; business object"
+       isAbstract="false" artifactName="C9customBMasterSvAI"/>
+   <OperationInputType typeName="C9customBRevMasterSCreI" parentTypeName="ItemVersionMasterCreI"
+       typeClassName="C9customBRevMasterSCreI" description="CreateInput object for &quot;C9customBRevMasterS&quot; business object"
+       isAbstract="false" artifactName="C9customBRevMasterSCreI"/>
+   <OperationInputType typeName="C9customBRevMasterSSvAI" parentTypeName="ItemVersionMasterSvAI"
+       typeClassName="C9customBRevMasterSSvAI" description="SaveAsInput object for &quot;C9customBRevMasterS&quot; business object"
+       isAbstract="false" artifactName="C9customBRevMasterSSvAI"/>
+   <OperationInputType typeName="C9customBRevisionCreI" parentTypeName="ItemRevisionCreI"
+       typeClassName="C9customBRevisionCreI" description="CreateInput object for &quot;C9customBRevision&quot; business object"
+       isAbstract="false" artifactName="C9customBRevisionCreI"/>
+   <OperationInputType typeName="C9customBRevisionMasterCreI" parentTypeName="ItemRevision MasterCreI"
+       typeClassName="C9customBRevisionMasterCreI" description="CreateInput object for &quot;C9customBRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="C9customBRevisionMasterCreI"/>
+   <OperationInputType typeName="C9customBRevisionMasterSvAI" parentTypeName="ItemRevision MasterSvAI"
+       typeClassName="C9customBRevisionMasterSvAI" description="SaveAsInput object for &quot;C9customBRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="C9customBRevisionMasterSvAI"/>
+   <OperationInputType typeName="C9customBRevisionRevI" parentTypeName="ItemRevisionRevI"
+       typeClassName="C9customBRevisionRevI" description="ReviseInput object for &quot;C9customBRevision&quot; business object"
+       isAbstract="false" artifactName="C9customBRevisionRevI"/>
+   <OperationInputType typeName="C9customBRevisionSvAI" parentTypeName="ItemRevisionSvAI"
+       typeClassName="C9customBRevisionSvAI" description="SaveAsInput object for &quot;C9customBRevision&quot; business object"
+       isAbstract="false" artifactName="C9customBRevisionSvAI"/>
+   <OperationInputType typeName="C9customBSvAI" parentTypeName="ItemSvAI" typeClassName="C9customBSvAI"
+       description="SaveAsInput object for &quot;C9customB&quot; business object"
+       isAbstract="false" artifactName="C9customBSvAI"/>
+   <OperationInputType typeName="C9customCCreI" parentTypeName="ItemCreI" typeClassName="C9customCCreI"
+       description="CreateInput object for &quot;C9customC&quot; business object"
+       isAbstract="false" artifactName="C9customCCreI"/>
+   <OperationInputType typeName="C9customCMasterCreI" parentTypeName="Item MasterCreI"
+       typeClassName="C9customCMasterCreI" description="CreateInput object for &quot;C9customCMaster&quot; business object"
+       isAbstract="false" artifactName="C9customCMasterCreI"/>
+   <OperationInputType typeName="C9customCMasterSCreI" parentTypeName="ItemMasterCreI"
+       typeClassName="C9customCMasterSCreI" description="CreateInput object for &quot;C9customCMasterS&quot; business object"
+       isAbstract="false" artifactName="C9customCMasterSCreI"/>
+   <OperationInputType typeName="C9customCMasterSSvAI" parentTypeName="ItemMasterSvAI"
+       typeClassName="C9customCMasterSSvAI" description="SaveAsInput object for &quot;C9customCMasterS&quot; business object"
+       isAbstract="false" artifactName="C9customCMasterSSvAI"/>
+   <OperationInputType typeName="C9customCMasterSvAI" parentTypeName="Item MasterSvAI"
+       typeClassName="C9customCMasterSvAI" description="SaveAsInput object for &quot;C9customCMaster&quot; business object"
+       isAbstract="false" artifactName="C9customCMasterSvAI"/>
+   <OperationInputType typeName="C9customCRevMasterSCreI" parentTypeName="ItemVersionMasterCreI"
+       typeClassName="C9customCRevMasterSCreI" description="CreateInput object for &quot;C9customCRevMasterS&quot; business object"
+       isAbstract="false" artifactName="C9customCRevMasterSCreI"/>
+   <OperationInputType typeName="C9customCRevMasterSSvAI" parentTypeName="ItemVersionMasterSvAI"
+       typeClassName="C9customCRevMasterSSvAI" description="SaveAsInput object for &quot;C9customCRevMasterS&quot; business object"
+       isAbstract="false" artifactName="C9customCRevMasterSSvAI"/>
+   <OperationInputType typeName="C9customCRevisionCreI" parentTypeName="ItemRevisionCreI"
+       typeClassName="C9customCRevisionCreI" description="CreateInput object for &quot;C9customCRevision&quot; business object"
+       isAbstract="false" artifactName="C9customCRevisionCreI"/>
+   <OperationInputType typeName="C9customCRevisionMasterCreI" parentTypeName="ItemRevision MasterCreI"
+       typeClassName="C9customCRevisionMasterCreI" description="CreateInput object for &quot;C9customCRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="C9customCRevisionMasterCreI"/>
+   <OperationInputType typeName="C9customCRevisionMasterSvAI" parentTypeName="ItemRevision MasterSvAI"
+       typeClassName="C9customCRevisionMasterSvAI" description="SaveAsInput object for &quot;C9customCRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="C9customCRevisionMasterSvAI"/>
+   <OperationInputType typeName="C9customCRevisionRevI" parentTypeName="ItemRevisionRevI"
+       typeClassName="C9customCRevisionRevI" description="ReviseInput object for &quot;C9customCRevision&quot; business object"
+       isAbstract="false" artifactName="C9customCRevisionRevI"/>
+   <OperationInputType typeName="C9customCRevisionSvAI" parentTypeName="ItemRevisionSvAI"
+       typeClassName="C9customCRevisionSvAI" description="SaveAsInput object for &quot;C9customCRevision&quot; business object"
+       isAbstract="false" artifactName="C9customCRevisionSvAI"/>
+   <OperationInputType typeName="C9customCSvAI" parentTypeName="ItemSvAI" typeClassName="C9customCSvAI"
+       description="SaveAsInput object for &quot;C9customC&quot; business object"
+       isAbstract="false" artifactName="C9customCSvAI"/>
+   <OperationInputType typeName="C9testIDgenCreI" parentTypeName="Fnd0BaseIdGeneratorCreI"
+       typeClassName="C9testIDgenCreI" description="CreateInput object for &quot;C9testIDgen&quot; business object"
+       isAbstract="false" artifactName="C9testIDgenCreI">
+     <OperationInputProperty propName="c9_Unit" compoundObjectConstant="" srcPropName="c9_Unit"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="c9_Department" compoundObjectConstant="" srcPropName="c9_Department"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="c9_ProductLine" compoundObjectConstant="" srcPropName="c9_ProductLine"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="c9_MakeBuy" compoundObjectConstant="" srcPropName="c9_MakeBuy"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+   </OperationInputType>
+   <OperationInputType typeName="C9testIDgenSvAI" parentTypeName="Fnd0BaseIdGeneratorSvAI"
+       typeClassName="C9testIDgenSvAI" description="SaveAsInput object for &quot;C9testIDgen&quot; business object"
+       isAbstract="false" artifactName="C9testIDgenSvAI"/>
+   <OperationInputType typeName="C9testitemCreI" parentTypeName="ItemCreI" typeClassName="C9testitemCreI"
+       description="CreateInput object for &quot;C9testitem&quot; business object"
+       isAbstract="false" artifactName="C9testitemCreI">
+     <OperationInputProperty propName="c9teststring" compoundObjectConstant="" srcPropName="c9teststring"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="c9testrelation" compoundObjectConstant="" srcPropName="C9testrelation"
+         compoundObjectType="PDF" fieldType="CompoundObject" description=""/>
+   </OperationInputType>
+   <OperationInputType typeName="C9testitemMasterCreI" parentTypeName="Item MasterCreI"
+       typeClassName="C9testitemMasterCreI" description="CreateInput object for &quot;C9testitemMaster&quot; business object"
+       isAbstract="false" artifactName="C9testitemMasterCreI"/>
+   <OperationInputType typeName="C9testitemMasterSCreI" parentTypeName="ItemMasterCreI"
+       typeClassName="C9testitemMasterSCreI" description="CreateInput object for &quot;C9testitemMasterS&quot; business object"
+       isAbstract="false" artifactName="C9testitemMasterSCreI"/>
+   <OperationInputType typeName="C9testitemMasterSSvAI" parentTypeName="ItemMasterSvAI"
+       typeClassName="C9testitemMasterSSvAI" description="SaveAsInput object for &quot;C9testitemMasterS&quot; business object"
+       isAbstract="false" artifactName="C9testitemMasterSSvAI"/>
+   <OperationInputType typeName="C9testitemMasterSvAI" parentTypeName="Item MasterSvAI"
+       typeClassName="C9testitemMasterSvAI" description="SaveAsInput object for &quot;C9testitemMaster&quot; business object"
+       isAbstract="false" artifactName="C9testitemMasterSvAI"/>
+   <OperationInputType typeName="C9testitemRevMasterSCreI" parentTypeName="ItemVersionMasterCreI"
+       typeClassName="C9testitemRevMasterSCreI" description="CreateInput object for &quot;C9testitemRevMasterS&quot; business object"
+       isAbstract="false" artifactName="C9testitemRevMasterSCreI"/>
+   <OperationInputType typeName="C9testitemRevMasterSSvAI" parentTypeName="ItemVersionMasterSvAI"
+       typeClassName="C9testitemRevMasterSSvAI" description="SaveAsInput object for &quot;C9testitemRevMasterS&quot; business object"
+       isAbstract="false" artifactName="C9testitemRevMasterSSvAI"/>
+   <OperationInputType typeName="C9testitemRevisionCreI" parentTypeName="ItemRevisionCreI"
+       typeClassName="C9testitemRevisionCreI" description="CreateInput object for &quot;C9testitemRevision&quot; business object"
+       isAbstract="false" artifactName="C9testitemRevisionCreI">
+     <OperationInputProperty propName="c9testdouble" compoundObjectConstant="" srcPropName="c9testdouble"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+   </OperationInputType>
+   <OperationInputType typeName="C9testitemRevisionMasterCreI" parentTypeName="ItemRevision MasterCreI"
+       typeClassName="C9testitemRevisionMasterCreI" description="CreateInput object for &quot;C9testitemRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="C9testitemRevisionMasterCreI"/>
+   <OperationInputType typeName="C9testitemRevisionMasterSvAI" parentTypeName="ItemRevision MasterSvAI"
+       typeClassName="C9testitemRevisionMasterSvAI" description="SaveAsInput object for &quot;C9testitemRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="C9testitemRevisionMasterSvAI"/>
+   <OperationInputType typeName="C9testitemRevisionRevI" parentTypeName="ItemRevisionRevI"
+       typeClassName="C9testitemRevisionRevI" description="ReviseInput object for &quot;C9testitemRevision&quot; business object"
+       isAbstract="false" artifactName="C9testitemRevisionRevI"/>
+   <OperationInputType typeName="C9testitemRevisionSvAI" parentTypeName="ItemRevisionSvAI"
+       typeClassName="C9testitemRevisionSvAI" description="SaveAsInput object for &quot;C9testitemRevision&quot; business object"
+       isAbstract="false" artifactName="C9testitemRevisionSvAI"/>
+   <OperationInputType typeName="C9testitemSvAI" parentTypeName="ItemSvAI" typeClassName="C9testitemSvAI"
+       description="SaveAsInput object for &quot;C9testitem&quot; business object"
+       isAbstract="false" artifactName="C9testitemSvAI"/>
+   <OperationInputType typeName="C9testrelationCreI" parentTypeName="ImanRelationCreI"
+       typeClassName="C9testrelationCreI" description="CreateInput object for &quot;C9testrelation&quot; business object"
+       isAbstract="false" artifactName="C9testrelationCreI"/>
+   <OperationInputType typeName="C9testrelationSvAI" parentTypeName="ImanRelationSvAI"
+       typeClassName="C9testrelationSvAI" description="SaveAsInput object for &quot;C9testrelation&quot; business object"
+       isAbstract="false" artifactName="C9testrelationSvAI"/>
+   <TcForm typeName="C9customAMaster" parentTypeName="Item Master" typeClassName="Form"
+       description="MasterForm object for &quot;C9customA&quot; business object" isAbstract="false"
+       artifactName="C9customAMaster" functionality="C9testproject" formStorageClassName="C9customAMasterS"/>
+   <TcForm typeName="C9customARevisionMaster" parentTypeName="ItemRevision Master"
+       typeClassName="Form" description="MasterForm object for &quot;C9customARevision&quot; business object"
+       isAbstract="false" artifactName="C9customARevisionMaster" functionality="C9testproject"
+       formStorageClassName="C9customARevMasterS"/>
+   <TcForm typeName="C9customBMaster" parentTypeName="Item Master" typeClassName="Form"
+       description="MasterForm object for &quot;C9customB&quot; business object" isAbstract="false"
+       artifactName="C9customBMaster" functionality="C9testproject" formStorageClassName="C9customBMasterS"/>
+   <TcForm typeName="C9customBRevisionMaster" parentTypeName="ItemRevision Master"
+       typeClassName="Form" description="MasterForm object for &quot;C9customBRevision&quot; business object"
+       isAbstract="false" artifactName="C9customBRevisionMaster" functionality="C9testproject"
+       formStorageClassName="C9customBRevMasterS"/>
+   <TcForm typeName="C9customCMaster" parentTypeName="Item Master" typeClassName="Form"
+       description="MasterForm object for &quot;C9customC&quot; business object" isAbstract="false"
+       artifactName="C9customCMaster" functionality="C9testproject" formStorageClassName="C9customCMasterS"/>
+   <TcForm typeName="C9customCRevisionMaster" parentTypeName="ItemRevision Master"
+       typeClassName="Form" description="MasterForm object for &quot;C9customCRevision&quot; business object"
+       isAbstract="false" artifactName="C9customCRevisionMaster" functionality="C9testproject"
+       formStorageClassName="C9customCRevMasterS"/>
+   <TcForm typeName="C9testitemMaster" parentTypeName="Item Master" typeClassName="Form"
+       description="MasterForm object for &quot;C9testitem&quot; business object"
+       isAbstract="false" artifactName="C9testitemMaster" functionality="C9testproject"
+       formStorageClassName="C9testitemMasterS"/>
+   <TcForm typeName="C9testitemRevisionMaster" parentTypeName="ItemRevision Master"
+       typeClassName="Form" description="MasterForm object for &quot;C9testitemRevision&quot; business object"
+       isAbstract="false" artifactName="C9testitemRevisionMaster" functionality="C9testproject"
+       formStorageClassName="C9testitemRevMasterS"/>
+   <TcRuntimeType typeName="C9testIDgen" parentTypeName="Fnd0BaseIdGenerator" typeClassName="C9testIDgen"
+       description="" isAbstract="false" artifactName="C9testIDgen" functionality="C9testproject">
+     <TcProperty propName="c9_Unit" propTypeName="Runtime" propValueType="PROP_string"
+         propMaxStringLength="128" isArray="false" arrayLength="0" description=""
+         referencedTypeConstant="" referencedType="" fnd0ReferencingAttrName=""/>
+     <TcProperty propName="c9_Department" propTypeName="Runtime" propValueType="PROP_string"
+         propMaxStringLength="128" isArray="false" arrayLength="0" description=""
+         referencedTypeConstant="" referencedType="" fnd0ReferencingAttrName=""/>
+     <TcProperty propName="c9_ProductLine" propTypeName="Runtime" propValueType="PROP_string"
+         propMaxStringLength="128" isArray="false" arrayLength="0" description=""
+         referencedTypeConstant="" referencedType="" fnd0ReferencingAttrName=""/>
+     <TcProperty propName="c9_MakeBuy" propTypeName="Runtime" propValueType="PROP_string"
+         propMaxStringLength="128" isArray="false" arrayLength="0" description=""
+         referencedTypeConstant="" referencedType="" fnd0ReferencingAttrName=""/>
+   </TcRuntimeType>
+   <TcStandardType typeName="C9customA" parentTypeName="Item" typeClassName="C9customA"
+       description="" isAbstract="false" artifactName="C9customA" functionality="C9testproject"/>
+   <TcStandardType typeName="C9customAMasterS" parentTypeName="ItemMaster" typeClassName="C9customAMasterS"
+       description="Form Storage object for &quot;C9customAMaster&quot; business object"
+       isAbstract="false" artifactName="C9customAMasterS" functionality="C9testproject"/>
+   <TcStandardType typeName="C9customARevMasterS" parentTypeName="ItemVersionMaster"
+       typeClassName="C9customARevMasterS" description="Form Storage object for &quot;C9customARevMaster&quot; business object"
+       isAbstract="false" artifactName="C9customARevMasterS" functionality="C9testproject"/>
+   <TcStandardType typeName="C9customARevision" parentTypeName="ItemRevision" typeClassName="C9customARevision"
+       description="ItemRevision object for &quot;C9customA&quot;  business object"
+       isAbstract="false" artifactName="C9customARevision" functionality="C9testproject"/>
+   <TcStandardType typeName="C9customB" parentTypeName="Item" typeClassName="C9customB"
+       description="" isAbstract="false" artifactName="C9customB" functionality="C9testproject"/>
+   <TcStandardType typeName="C9customBMasterS" parentTypeName="ItemMaster" typeClassName="C9customBMasterS"
+       description="Form Storage object for &quot;C9customBMaster&quot; business object"
+       isAbstract="false" artifactName="C9customBMasterS" functionality="C9testproject"/>
+   <TcStandardType typeName="C9customBRevMasterS" parentTypeName="ItemVersionMaster"
+       typeClassName="C9customBRevMasterS" description="Form Storage object for &quot;C9customBRevMaster&quot; business object"
+       isAbstract="false" artifactName="C9customBRevMasterS" functionality="C9testproject"/>
+   <TcStandardType typeName="C9customBRevision" parentTypeName="ItemRevision" typeClassName="C9customBRevision"
+       description="ItemRevision object for &quot;C9customB&quot;  business object"
+       isAbstract="false" artifactName="C9customBRevision" functionality="C9testproject"/>
+   <TcStandardType typeName="C9customC" parentTypeName="Item" typeClassName="C9customC"
+       description="" isAbstract="false" artifactName="C9customC" functionality="C9testproject"/>
+   <TcStandardType typeName="C9customCMasterS" parentTypeName="ItemMaster" typeClassName="C9customCMasterS"
+       description="Form Storage object for &quot;C9customCMaster&quot; business object"
+       isAbstract="false" artifactName="C9customCMasterS" functionality="C9testproject"/>
+   <TcStandardType typeName="C9customCRevMasterS" parentTypeName="ItemVersionMaster"
+       typeClassName="C9customCRevMasterS" description="Form Storage object for &quot;C9customCRevMaster&quot; business object"
+       isAbstract="false" artifactName="C9customCRevMasterS" functionality="C9testproject"/>
+   <TcStandardType typeName="C9customCRevision" parentTypeName="ItemRevision" typeClassName="C9customCRevision"
+       description="ItemRevision object for &quot;C9customC&quot;  business object"
+       isAbstract="false" artifactName="C9customCRevision" functionality="C9testproject"/>
+   <TcStandardType typeName="C9testitem" parentTypeName="Item" typeClassName="C9testitem"
+       description="" isAbstract="false" artifactName="C9testitem" functionality="C9testproject">
+     <TcProperty propName="C9testrelation" propTypeName="Relation" propValueType="PROP_untyped_relation"
+         propMaxStringLength="0" isArray="true" arrayLength="-1" description="" referencedTypeConstant=""
+         referencedType="" fnd0ReferencingAttrName=""/>
+   </TcStandardType>
+   <TcStandardType typeName="C9testitemMasterS" parentTypeName="ItemMaster" typeClassName="C9testitemMasterS"
+       description="Form Storage object for &quot;C9testitemMaster&quot; business object"
+       isAbstract="false" artifactName="C9testitemMasterS" functionality="C9testproject"/>
+   <TcStandardType typeName="C9testitemRevMasterS" parentTypeName="ItemVersionMaster"
+       typeClassName="C9testitemRevMasterS" description="Form Storage object for &quot;C9testitemRevMaster&quot; business object"
+       isAbstract="false" artifactName="C9testitemRevMasterS" functionality="C9testproject"/>
+   <TcStandardType typeName="C9testitemRevision" parentTypeName="ItemRevision" typeClassName="C9testitemRevision"
+       description="ItemRevision object for &quot;C9testitem&quot;  business object"
+       isAbstract="false" artifactName="C9testitemRevision" functionality="C9testproject"/>
+   <TcStandardType typeName="C9testrelation" parentTypeName="ImanRelation" typeClassName="C9testrelation"
+       description="" isAbstract="false" artifactName="C9testrelation" functionality="C9testproject"/>
+   <Condition name="C9_conAM" expression="o.c9_Unit=&quot;AM&quot; and o.c9_MakeBuy=&quot;Make&quot;"
+       secured="false" description="">
+     <ConditionParameter name="o" parameterTypeName="C9testIDgen"/>
+   </Condition>
+   <Condition name="C9_conBuy" expression="o.c9_MakeBuy=&quot;Buy&quot;" secured="false"
+       description="">
+     <ConditionParameter name="o" parameterTypeName="C9testIDgen"/>
+   </Condition>
+   <Condition name="C9_conCH" expression="o.c9_Unit=&quot;CH&quot; and o.c9_MakeBuy=&quot;Make&quot;"
+       secured="false" description="">
+     <ConditionParameter name="o" parameterTypeName="C9testIDgen"/>
+   </Condition>
+   <Condition name="C9_conEU" expression="o.c9_Unit=&quot;EU&quot; and o.c9_MakeBuy=&quot;Make&quot;"
+       secured="false" description="">
+     <ConditionParameter name="o" parameterTypeName="C9testIDgen"/>
+   </Condition>
+   <Condition name="C9conAP" expression="o.c9_Unit=&quot;AP&quot; and o.c9_MakeBuy=&quot;Make&quot;"
+       secured="false" description="">
+     <ConditionParameter name="o" parameterTypeName="C9testIDgen"/>
+   </Condition>
+   <TcGlobalConstantAttach constantName="Fnd0SelectedLocales" value="en_US"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9customA" value="C9customACreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9customAMaster" value="C9customAMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9customAMasterS" value="C9customAMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9customARevision" value="C9customARevisionCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9customARevisionMaster"
+       value="C9customARevisionMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9customARevMasterS"
+       value="C9customARevMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9customB" value="C9customBCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9customBMaster" value="C9customBMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9customBMasterS" value="C9customBMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9customBRevision" value="C9customBRevisionCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9customBRevisionMaster"
+       value="C9customBRevisionMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9customBRevMasterS"
+       value="C9customBRevMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9customC" value="C9customCCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9customCMaster" value="C9customCMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9customCMasterS" value="C9customCMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9customCRevision" value="C9customCRevisionCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9customCRevisionMaster"
+       value="C9customCRevisionMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9customCRevMasterS"
+       value="C9customCRevMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9testIDgen" value="C9testIDgenCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9testitem" value="C9testitemCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9testitemMaster" value="C9testitemMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9testitemMasterS" value="C9testitemMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9testitemRevision"
+       value="C9testitemRevisionCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9testitemRevisionMaster"
+       value="C9testitemRevisionMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9testitemRevMasterS"
+       value="C9testitemRevMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="C9testrelation" value="C9testrelationCreI"/>
+   <TcTypeConstantAttach constantName="Fnd0Icon" typeName="C9testitemRevision" value="C9icons8-pixel-star-16-transparent.png"/>
+   <TcTypeConstantAttach constantName="Fnd0IdGenerator" typeName="C9testitem" value="C9testIDgen"/>
+   <TcTypeConstantAttach constantName="ItemRevision" typeName="C9customA" value="C9customARevision"/>
+   <TcTypeConstantAttach constantName="ItemRevision" typeName="C9customB" value="C9customBRevision"/>
+   <TcTypeConstantAttach constantName="ItemRevision" typeName="C9customC" value="C9customCRevision"/>
+   <TcTypeConstantAttach constantName="ItemRevision" typeName="C9testitem" value="C9testitemRevision"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="C9customA" value="C9customAMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="C9customARevision" value="C9customARevisionMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="C9customB" value="C9customBMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="C9customBRevision" value="C9customBRevisionMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="C9customC" value="C9customCMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="C9customCRevision" value="C9customCRevisionMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="C9testitem" value="C9testitemMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="C9testitemRevision" value="C9testitemRevisionMaster"/>
+   <TcTypeConstantAttach constantName="ReviseInput" typeName="C9customARevision" value="C9customARevisionRevI"/>
+   <TcTypeConstantAttach constantName="ReviseInput" typeName="C9customBRevision" value="C9customBRevisionRevI"/>
+   <TcTypeConstantAttach constantName="ReviseInput" typeName="C9customCRevision" value="C9customCRevisionRevI"/>
+   <TcTypeConstantAttach constantName="ReviseInput" typeName="C9testitemRevision"
+       value="C9testitemRevisionRevI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9customA" value="C9customASvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9customAMaster" value="C9customAMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9customAMasterS" value="C9customAMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9customARevision" value="C9customARevisionSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9customARevisionMaster"
+       value="C9customARevisionMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9customARevMasterS"
+       value="C9customARevMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9customB" value="C9customBSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9customBMaster" value="C9customBMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9customBMasterS" value="C9customBMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9customBRevision" value="C9customBRevisionSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9customBRevisionMaster"
+       value="C9customBRevisionMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9customBRevMasterS"
+       value="C9customBRevMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9customC" value="C9customCSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9customCMaster" value="C9customCMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9customCMasterS" value="C9customCMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9customCRevision" value="C9customCRevisionSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9customCRevisionMaster"
+       value="C9customCRevisionMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9customCRevMasterS"
+       value="C9customCRevMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9testIDgen" value="C9testIDgenSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9testitem" value="C9testitemSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9testitemMaster" value="C9testitemMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9testitemMasterS" value="C9testitemMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9testitemRevision"
+       value="C9testitemRevisionSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9testitemRevisionMaster"
+       value="C9testitemRevisionMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9testitemRevMasterS"
+       value="C9testitemRevMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="C9testrelation" value="C9testrelationSvAI"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="C9customA" propertyName="c9Boolean_Property"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="C9customARevision" propertyName="c9Boolean_Property"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="C9customARevisionMaster"
+       propertyName="c9Parent_ID" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="C9customARevisionMaster"
+       propertyName="c9TestProp" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="C9customBRevisionMaster"
+       propertyName="c9Parent_ID" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="C9customCRevisionMaster"
+       propertyName="c9Parent_ID" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="C9testIDgen" propertyName="c9_Department"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="C9testIDgen" propertyName="c9_MakeBuy"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="C9testIDgen" propertyName="c9_ProductLine"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="C9testIDgen" propertyName="c9_Unit"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="C9testitem" propertyName="C9testrelation"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="C9testitem" propertyName="c9teststring"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="C9testitemRevision"
+       propertyName="c9testcompound" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="C9testitemRevision"
+       propertyName="c9testdouble" value="true"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="C9customA" propertyName="c9Boolean_Property"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="C9customARevision"
+       propertyName="c9Boolean_Property" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="C9customARevisionMaster"
+       propertyName="c9Parent_ID" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="C9customARevisionMaster"
+       propertyName="c9TestProp" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="C9customBRevisionMaster"
+       propertyName="c9Parent_ID" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="C9customCRevisionMaster"
+       propertyName="c9Parent_ID" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="C9testIDgen" propertyName="c9_Department"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="C9testIDgen" propertyName="c9_MakeBuy"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="C9testIDgen" propertyName="c9_ProductLine"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="C9testIDgen" propertyName="c9_Unit"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="C9testitem" propertyName="C9testrelation"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="C9testitem" propertyName="c9teststring"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="C9testitemRevision"
+       propertyName="c9testcompound" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="C9testitemRevision"
+       propertyName="c9testdouble" value="Write"/>
+   <TcPropertyConstantAttach constantName="Required" typeName="C9testitemCreI" propertyName="c9teststring"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="C9testitemCreI" propertyName="fnd0IdGenerator"
+       value="true"/>
+   <TcCompoundPropertyRule destTypeName="C9testitemRevision" destPropertyName="c9testcompound"
+       sourceTypeName="C9testitem" sourcePropertyName="c9teststring" isReadOnly="false"
+       pathToSource="REF(items_tag,C9testitem).c9teststring" description=""/>
+   <TcDeepCopyRule typeName="C9testitemRevision" relRefPropName="IMAN_specification"
+       propertyType="Relation" objectTypeName="Dataset" conditionName="isTrue" operationName="ITEM_create_from_rev"
+       copyType="CopyAsObject" isTargetPrimary="true" secured="true" copyRelationAttributes="true"
+       isRequired="false" description=""/>
+   <TcDeepCopyRule typeName="C9testitemRevision" relRefPropName="IMAN_specification"
+       propertyType="Relation" objectTypeName="MSPowerPoint" conditionName="isTrue"
+       operationName="ITEM_create_from_rev" copyType="CopyAsReference" isTargetPrimary="true"
+       secured="true" copyRelationAttributes="true" isRequired="false" description=""/>
+   <TcGRMRule primaryTypeName="C9testitemRevision" secondaryTypeName="MSWord" relationTypeName="IMAN_specification"
+       conditionName="isTrue" primaryCardinality="1" secondaryCardinality="-1" secured="false"
+       attachability="Unrestricted" changeability="Changeable" detachability="Unrestricted"
+       description=""/>
+   <TcTypeDisplayRule hiddenTypeName="C9testitem" accessorName="Organization" accessorType="Organization"
+       conditionName="isFalse" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="C9testitem" accessorName="Sam in Engineering"
+       accessorType="RoleInGroup" conditionName="isTrue" description=""/>
+   <TcExtension name="C9testExportBom" internal="false" cannedExtension="false" languageType="CPlusPlus"
+       libraryName="libC9testlib" description="">
+     <TcExtensionValidity parameter="TYPE:Session:BMF_SESSION_register_epm_handlers:4"/>
+   </TcExtension>
+   <TcExtension name="C9testValidateBool" internal="false" cannedExtension="false"
+       languageType="CPlusPlus" libraryName="libC9testlib" description="">
+     <TcExtensionValidity parameter="TYPE:Session:BMF_SESSION_register_epm_handlers:4"/>
+   </TcExtension>
+   <TcExtension name="C9testWriteObjProp" internal="false" cannedExtension="false"
+       languageType="CPlusPlus" libraryName="libC9testlib" description="">
+     <TcExtensionValidity parameter="TYPE:Session:BMF_SESSION_register_epm_handlers:4"/>
+   </TcExtension>
+   <TcExtension name="C9testattachdataset" internal="false" cannedExtension="false"
+       languageType="CPlusPlus" libraryName="libC9testlib" description="">
+     <TcExtensionValidity parameter="TYPE:C9customA:ITEM_create:3"/>
+   </TcExtension>
+   <TcExtension name="C9testcreationdate" internal="false" cannedExtension="false"
+       languageType="CPlusPlus" libraryName="libC9testlib" description="">
+     <TcExtensionValidity parameter="TYPE:Session:BMF_SESSION_register_epm_handlers:4"/>
+   </TcExtension>
+   <TcExtension name="C9testextension" internal="false" cannedExtension="false" languageType="CPlusPlus"
+       libraryName="libC9testlib" description="">
+     <TcExtensionValidity parameter="TYPE:C9customC:ITEM_create:3"/>
+   </TcExtension>
+   <TcExtension name="C9testregisterhandler" internal="false" cannedExtension="false"
+       languageType="CPlusPlus" libraryName="libC9testlib" description="">
+     <TcExtensionValidity parameter="TYPE:Session:BMF_SESSION_register_epm_handlers:4"/>
+   </TcExtension>
+   <TcExtensionAttach extensionName="C9testValidateBool" operationName="BMF_SESSION_register_epm_handlers"
+       isActive="true" extendableElementName="Session" extendableElementType="Type"
+       extensionPointType="BaseAction" conditionName="isTrue" description=""/>
+   <TcExtensionAttach extensionName="C9testattachdataset" operationName="ITEM_create"
+       isActive="true" extendableElementName="C9customA" extendableElementType="Type"
+       extensionPointType="PostAction" conditionName="isTrue" description=""/>
+   <TcExtensionAttach extensionName="C9testcreationdate" operationName="BMF_SESSION_register_epm_handlers"
+       isActive="true" extendableElementName="Session" extendableElementType="Type"
+       extensionPointType="BaseAction" conditionName="isTrue" description=""/>
+   <TcExtensionAttach extensionName="C9testextension" operationName="ITEM_create"
+       isActive="true" extendableElementName="C9customC" extendableElementType="Type"
+       extensionPointType="PostAction" conditionName="isTrue" description=""/>
+   <TcExtensionAttach extensionName="C9testregisterhandler" operationName="BMF_SESSION_register_epm_handlers"
+       isActive="true" extendableElementName="Session" extendableElementType="Type"
+       extensionPointType="BaseAction" conditionName="isTrue" description=""/>
+   <TcExtensionAttach extensionName="C9testExportBom" operationName="BMF_SESSION_register_epm_handlers"
+       isActive="true" extendableElementName="Session" extendableElementType="Type"
+       extensionPointType="BaseAction" conditionName="isTrue" description=""/>
+   <TcExtensionAttach extensionName="C9testWriteObjProp" operationName="BMF_SESSION_register_epm_handlers"
+       isActive="true" extendableElementName="Session" extendableElementType="Type"
+       extensionPointType="BaseAction" conditionName="isTrue" description=""/>
+   <TcNamingRule name="C9testNR">
+     <TcPattern generateCounters="true" patternString="UNNN">
+       <TcCounter initialValue="A001" maximumValue="A100"/>
+     </TcPattern>
+   </TcNamingRule>
+   <TcRevNamingRule name="C9testRNR" excludeSkipLetters="true">
+     <TcInitRevDetails revisionType="Alphabetic" revisionStart="A" revisionDescription=""/>
+     <TcSecondaryRevDetails revisionType="Numeric" revisionStart="01" revisionDescription=""/>
+   </TcRevNamingRule>
+   <TcNamingRuleAttach ruleName="C9testNR" typeName="C9testitem" propertyName="item_id"
+       case="Mix" conditionName="isTrue" override="true" ruleType="NamingRule" description=""/>
+   <TcNamingRuleAttach ruleName="C9testRNR" typeName="C9testitem" propertyName="item_revision_id"
+       case="Mix" conditionName="isTrue" override="true" ruleType="RevisionNamingRule"
+       description=""/>
+   <TcLOV name="C9_MakeBuy" lovType="ListOfValuesString" usage="Exhaustive" description="">
+     <TcLOVValue value="Make" description="" conditionName="isTrue"/>
+     <TcLOVValue value="Buy" description="" conditionName="isTrue"/>
+   </TcLOV>
+   <TcLOV name="C9_department" lovType="ListOfValuesString" usage="Exhaustive" description="">
+     <TcLOVValue value="BS" description="" conditionName="isTrue"/>
+     <TcLOVValue value="PS" description="" conditionName="isTrue"/>
+   </TcLOV>
+   <TcLOV name="C9_productline" lovType="ListOfValuesString" usage="Exhaustive" description="">
+     <TcLOVValue value="PV" description="" conditionName="isTrue"/>
+     <TcLOVValue value="CV" description="" conditionName="isTrue"/>
+   </TcLOV>
+   <TcLOV name="C9_unit" lovType="ListOfValuesString" usage="Exhaustive" description="">
+     <TcLOVValue value="AP" description="" conditionName="isTrue"/>
+     <TcLOVValue value="EU" description="" conditionName="isTrue"/>
+     <TcLOVValue value="CH" description="" conditionName="isTrue"/>
+     <TcLOVValue value="AM" description="" conditionName="isTrue"/>
+   </TcLOV>
+   <TcLOV name="C9testclassic_country" lovType="ListOfValuesString" usage="Exhaustive"
+       description="">
+     <TcLOVValue value="INDIA" description="" conditionName="isTrue"/>
+     <TcLOVValue value="USA" description="" conditionName="isTrue"/>
+   </TcLOV>
+   <TcLOV name="C9testclassic_states" lovType="ListOfValuesString" usage="Exhaustive"
+       description="">
+     <TcLOVValue value="TELANGANA" description="" conditionName="isTrue"/>
+     <TcLOVValue value="KARNATAKA" description="" conditionName="isTrue"/>
+   </TcLOV>
+   <TcLOV name="C9testrefclassic" lovType="ListOfValuesString" usage="Exhaustive"
+       description=""/>
+   <TcLOVValueSubLOVAttach targetLOVName="C9testclassic_country" targetValue="INDIA"
+       subLOVName="C9testclassic_states" conditionName="isTrue"/>
+   <TcLOVAttach lovName="C9_MakeBuy" typeName="C9testIDgen">
+     <TcLOVAttachPropertyInfo valuePropertyName="c9_MakeBuy" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <TcLOVAttach lovName="C9_department" typeName="C9testIDgen">
+     <TcLOVAttachPropertyInfo valuePropertyName="c9_Department" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <TcLOVAttach lovName="C9_productline" typeName="C9testIDgen">
+     <TcLOVAttachPropertyInfo valuePropertyName="c9_ProductLine" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <TcLOVAttach lovName="C9_unit" typeName="C9testIDgen">
+     <TcLOVAttachPropertyInfo valuePropertyName="c9_Unit" conditionName="isTrue" override="false"
+         level="0"/>
+   </TcLOVAttach>
+   <TcLOVAttach lovName="C9testclassic_country" typeName="C9testitem">
+     <TcLOVAttachPropertyInfo valuePropertyName="c9teststring" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <Functionality name="C9testproject" displayName="testproject" enabledForVerificationRules="false"
+       description="Component for the template - c9testproject"/>
+   <PropertyRenderer name="C9testrenderer" script="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;icons Version=&quot;1.0&quot;&gt;   &#x0A;    &lt;primaryIcon source=&quot;C9icons8-pixel-star-16-transparent.png&quot;/&gt;   &#x0A;    &lt;overlayIcon source=&quot;checked_out&quot; mapName=&quot;CheckedOutMap&quot; /&gt;   &#x0A;    &lt;propertyMap name=&quot;CheckedOutMap&quot;&gt;      &#x0A;        &lt;item key=&quot;Y&quot; value=&quot;C9icons8-pixel-star-16 black.png&quot;/&gt;      &#x0A;        &lt;item key=&quot;N&quot; value=&quot;C9icons8-pixel-star-16-yellow.png&quot;/&gt;      &#x0A;        &lt;item key=&quot; &quot; value=&quot;C9icons8-pixel-star-16-transparent.png&quot; /&gt;   &#x0A;    &lt;/propertyMap&gt;&#x0A;&lt;/icons&gt;"
+       description=""/>
+   <PropertyRendererAttach rendererName="C9testrenderer" typeName="C9testitemRevision"
+       propertyName="object_string" conditionName="isTrue"/>
+   <PropertyFormatterAttach formatterName="Fnd0DoubleFormatter_2DecimalPlaces" typeName="C9testitemRevision"
+       propertyName="c9testdouble" conditionName="isTrue"/>
+   <IdGenerationRule name="C9_testGenRule" idGenerationConfig="C9testIDgen" description="">
+     <ConcatenationRule name="C9_concatAP" conditionName="C9conAP">
+       <ConcatenationProperty propName="c9_Unit"/>
+       <ConcatenationProperty propName="c9_ProductLine"/>
+       <ConcatenationProperty propName="c9_Department"/>
+       <TcPattern generateCounters="true" patternString="NNNN" description="Counter for AP">
+         <TcCounter initialValue="2000" maximumValue="4000"/>
+       </TcPattern>
+     </ConcatenationRule>
+     <ConcatenationRule name="C9_concatEU" conditionName="C9_conEU">
+       <ConcatenationProperty propName="c9_Unit"/>
+       <ConcatenationProperty propName="c9_ProductLine"/>
+       <ConcatenationProperty propName="c9_Department"/>
+       <TcPattern generateCounters="true" patternString="NNNN" description="Counter for EU">
+         <TcCounter initialValue="4001" maximumValue="6000"/>
+       </TcPattern>
+     </ConcatenationRule>
+     <ConcatenationRule name="C9_concatCH" conditionName="C9_conCH">
+       <ConcatenationProperty propName="c9_Unit"/>
+       <ConcatenationProperty propName="c9_ProductLine"/>
+       <ConcatenationProperty propName="c9_Department"/>
+       <TcPattern generateCounters="true" patternString="NNNN" description="Counter for CH">
+         <TcCounter initialValue="6001" maximumValue="8000"/>
+       </TcPattern>
+     </ConcatenationRule>
+     <ConcatenationRule name="C9_concatAM" conditionName="C9_conAM">
+       <ConcatenationProperty propName="c9_Unit"/>
+       <ConcatenationProperty propName="c9_ProductLine"/>
+       <ConcatenationProperty propName="c9_Department"/>
+       <TcPattern generateCounters="true" patternString="NNNN" description="Counter for AM">
+         <TcCounter initialValue="8001" maximumValue="9999"/>
+       </TcPattern>
+     </ConcatenationRule>
+     <ConcatenationRule name="C9_concatBuy" conditionName="C9_conBuy">
+       <ConcatenationProperty propName="c9_Unit"/>
+       <ConcatenationProperty propName="c9_ProductLine"/>
+       <ConcatenationProperty propName="c9_Department"/>
+       <TcPattern generateCounters="true" patternString="NNNNN" description="Counter for Make/Buy">
+         <TcCounter initialValue="99999" maximumValue="90000" isDecrement="true"/>
+       </TcPattern>
+     </ConcatenationRule>
+   </IdGenerationRule>
+   <IdGenerationRuleAttach typeName="C9testitem" propertyName="item_id" idGenerationRule="C9_testGenRule"
+       condition="isTrue"/>
+</Add>
+</TcBusinessData>
