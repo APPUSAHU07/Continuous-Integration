@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TcBusinessData xmlns="http://teamcenter.com/BusinessModel/TcBusinessData" Date="">
 <Add>
+   <Library name="M55CustomLibrary" createRelease="tc2512" serviceLibrary="false"
+       namespace="" isThirdParty="false">
+     <DependentOn name="metaframework"/>
+     <DependentOn name="sa"/>
+     <DependentOn name="tccore"/>
+     <DependentOn name="tc"/>
+     <DependentOn name="cxpom"/>
+     <DependentOn name="epm"/>
+     <DependentOn name="ae"/>
+   </Library>
    <TcClass className="M55HotWheels" parentClassName="Item" isExportable="false" isUninstantiable="false"
        isUninheritable="false" description=""/>
    <TcClass className="M55HotWheelsMasterS" parentClassName="ItemMaster" isExportable="false"
@@ -96,6 +106,21 @@
        value="M55HotWheelsRevisionMasterSvAI"/>
    <TcTypeConstantAttach constantName="SaveAsInput" typeName="M55HotWheelsRevMasterS"
        value="M55HotWheelsRevMasterSSvAI"/>
+   <TcExtension name="M55CustomExtension" internal="false" cannedExtension="false"
+       languageType="CPlusPlus" libraryName="libM55CustomLibrary" description="">
+     <TcExtensionValidity parameter="TYPE:M55HotWheels:ITEM_create:1"/>
+   </TcExtension>
+   <TcExtension name="M55CustomHandler" internal="false" cannedExtension="false" languageType="CPlusPlus"
+       libraryName="libM55CustomLibrary" description="">
+     <TcExtensionValidity parameter="TYPE:Session:BMF_SESSION_register_epm_handlers:4"/>
+   </TcExtension>
+   <TcExtensionAttach extensionName="M55CustomExtension" operationName="ITEM_create"
+       isActive="true" extendableElementName="M55HotWheels" extendableElementType="Type"
+       extensionPointType="PreCondition" conditionName="isTrue" description=""/>
+   <TcLOV name="M55Countries" lovType="ListOfValuesString" usage="Exhaustive" description="">
+     <TcLOVValue value="Asia" description="" conditionName="isTrue"/>
+     <TcLOVValue value="Non-Asia" description="" conditionName="isTrue"/>
+   </TcLOV>
    <Functionality name="M55mavenberg" displayName="mavenberg" enabledForVerificationRules="false"
        description="Component for the template - m55mavenberg"/>
 </Add>

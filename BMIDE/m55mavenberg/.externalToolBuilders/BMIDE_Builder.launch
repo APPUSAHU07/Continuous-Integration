@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.ui.externaltools.ProgramBuilderLaunchConfigurationType">
+    <booleanAttribute key="org.eclipse.debug.core.ATTR_APPEND_ENVIRONMENT" value="true"/>
+    <stringAttribute key="org.eclipse.debug.core.ATTR_REFRESH_SCOPE" value="${project}"/>
+    <booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="false"/>
+    <booleanAttribute key="org.eclipse.debug.ui.ATTR_SHOW_CONSOLE_ON_OUTPUT" value="true"/>
+    <booleanAttribute key="org.eclipse.ui.externaltools.ATTR_BUILDER_ENABLED" value="false"/>
+    <stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value=""/>
+    <stringAttribute key="org.eclipse.ui.externaltools.ATTR_RUN_BUILD_KINDS" value="full,incremental,auto,clean"/>
+    <stringAttribute key="org.eclipse.ui.externaltools.ATTR_TOOL_ARGUMENTS" value="-f makefile.wntx64"/>
+    <booleanAttribute key="org.eclipse.ui.externaltools.ATTR_TRIGGERS_CONFIGURED" value="true"/>
+    <booleanAttribute key="org.eclipse.ui.externaltools.ATTR_TRIGGERS_ENABLED" value="true"/>
+    <stringAttribute key="org.eclipse.ui.externaltools.ATTR_WORKING_DIRECTORY" value="${workspace_loc:/m55mavenberg}"/>
+</launchConfiguration>

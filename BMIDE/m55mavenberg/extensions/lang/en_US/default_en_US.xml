@@ -8,5 +8,7 @@
    <key locale="en_US" id="BusinessObject{::}M55HotWheelsRevisionMaster" status="Approved">Hot Wheels Revision Master</key>
    <key locale="en_US" id="BusinessObject{::}M55HotWheelsRevision" status="Approved">Hot Wheels Revision</key>
    <key locale="en_US" id="BusinessObject{::}M55HotWheels" status="Approved">Hot Wheels</key>
+   <key locale="en_US" id="LOVValue{::}M55Countries{::}Asia" status="Approved">Asia</key>
+   <key locale="en_US" id="LOVValue{::}M55Countries{::}Non-Asia" status="Approved">Non-Asia</key>
 </Add>
 </TcBusinessDataLocalization>

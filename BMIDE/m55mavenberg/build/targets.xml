@@ -1,0 +1,168 @@
+<!--
+==================================================
+ Copyright 2013.
+ Siemens Product Lifecycle Management Software Inc.
+ All Rights Reserved.
+ ==================================================
+ ==================================================
+             Auto-generated source
+                 DO NOT EDIT
+ ==================================================
+ -->
+
+
+<project name="m55mavenberg"   >
+
+
+    <taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
+   	
+   	
+    <target name="setPackageList" >
+        
+        <property name="package.list.file"		location="${library.classes.home}/package.properties" />
+
+        <!-- Get a list of folder's in this Jar -->
+        <path id="folder.list">
+            <dirset  dir="${library.source.home}" >
+                <include name="com/*/schemas/**"   />
+                <include name="com/*/services/**" />                
+            </dirset>
+        </path>
+
+        <!-- Convert the folders to package names -->
+        <property name="class.folder.list"  refid="folder.list" />
+        <echo file="${package.list.file}"   message="package.list=${class.folder.list}" /> 
+
+        <replace file="${package.list.file}">
+             <replacefilter token="${library.source.home}" value=""  /> 
+             <replacefilter token="${path.separator}"      value="," /> 
+             <replacefilter token="/"                      value="." /> 
+             <replacefilter token="\"                      value="." /> 
+             <replacefilter token=".com."                  value="com." /> 
+         </replace>
+        
+         <property file="${package.list.file}" /> 
+         <delete   file="${package.list.file}" /> 
+    </target>	
+	
+	<target name="create-manifest" depends="setPackageList" >
+		
+        <property name="manifest.file"			location="${library.classes.home}/META-INF/MANIFEST.MF" />
+        <mkdir  dir="${library.classes.home}/META-INF" />
+
+        <tstamp>
+            <format property="NOW" pattern="MMMM d, yyyy" locale="en"/>
+        </tstamp>
+
+        <manifest file="${manifest.file}" mode="replace">
+            <attribute name="Implementation-Title"          value="${implementation.title}"/>
+            <attribute name="Implementation-Version"        value="${teamcenter.version}, ${NOW}"/>
+            <attribute name="TC-Version"                    value="${teamcenter.version.label}"/>
+            <attribute name="Implementation-Vendor"         value="Siemens PLM Software, Inc."/>
+            <attribute name="Bundle-ManifestVersion"        value="2"/>
+            <attribute name="Bundle-Name"                   value="${bundle.name}"/>
+            <attribute name="Bundle-SymbolicName"           value="${bundle.symbolic.name}"/>
+            <attribute name="Bundle-Version"                value="${teamcenter.version}"/>
+            <attribute name="Bundle-RequiredExecutionEnvironment" value="JavaSE-11" />
+            <attribute name="Automatic-Module-Name"         value="${bundle.symbolic.name}" />   
+            <attribute name="Bundle-ClassPath"              value="."/>
+            <attribute name="Bundle-Vendor"                 value="Siemens PLM Software, Inc."/>
+            <attribute name="Bundle-Localization"           value="plugin"/>
+            <attribute name="Bundle-ActivationPolicy"       value="lazy" />
+            <attribute name="Require-Bundle"                value="${required.bundles}" />
+            <attribute name="Export-Package"                value="${package.list}" />
+        </manifest>
+
+	</target>
+	
+	
+	
+	
+	<target name="releaseJar" depends="create-manifest"  if="build.release.jar" >	
+            <jar destfile="${jar.folder.home}/${library.jar.name}" manifest="${manifest.file}" >
+                <fileset dir="${library.classes.home}"/>
+            </jar> 
+	</target>
+	
+	
+    <target name="debugJar" depends="create-manifest"  if="build.debug.jar" >
+		<property name="manifest.file"			location="${library.classes.home}/META-INF/MANIFEST.MF" />
+		<jar destfile="${jar.folder.home}/${library.jar.name}" manifest="${manifest.file}">
+         	<fileset dir="${library.classes.home}"/>
+            <fileset dir="${library.source.home}" includes="**/*.java"/>
+		</jar> 
+	</target>
+	
+	<target name="compile" >
+		<condition property="build.release.jar">
+      	    <equals arg1="${javac.debug}"          arg2="false"/>
+  		</condition>
+		<condition property="build.debug.jar">
+      		<equals arg1="${javac.debug}"          arg2="true"/>
+  		</condition> 
+  			
+		<property name="manifest.file"			location="${library.classes.home}/META-INF/MANIFEST.MF" />
+		<javac destdir="${library.classes.home}" 
+		       includeantruntime="false"
+		       debug="${javac.debug}" >
+            <src path="${library.source.home}"/>
+            <classpath refid="build.classpath"/>
+        </javac>
+   	</target>
+	
+    <target name="resolve-bmide-3rdparty"  >
+        <property environment="env"/>
+
+        <tempfile  property="foss_scriptNeutral"   destdir="${java.io.tmpdir}" prefix="FossScript" />
+        <property name="win_text" value="@echo OFF${line.separator}call ${env.FOSS_REPOSITORY_HOME}\bin\tpc.bat ResolveClassPath Tc2512 SoaCodeGen${line.separator}echo %CLASSPATH%${line.separator}" />
+        <property name="lnx_text" value="#!/bin/sh${line.separator}. ${env.FOSS_REPOSITORY_HOME}/bin/tpc.sh ResolveClassPath Tc2512 SoaCodeGen${line.separator}echo $CLASSPATH${line.separator}" />
+        
+        <condition property="executableCmd" value="cmd"                          else="sh"                       ><os family="windows"/></condition>                      
+        <condition property="foss_script"   value="${foss_scriptNeutral}.bat"    else="${foss_scriptNeutral}.sh" ><os family="windows"/></condition>                      
+        <condition property="foss_command"  value="/c ${foss_scriptNeutral}.bat" else="${foss_scriptNeutral}.sh" ><os family="windows"/></condition>                      
+        <condition property="script_text"   value="${win_text}"                  else="${lnx_text}"              ><os family="windows"/></condition>                      
+        <echo file="${foss_script}" message="${script_text}" />
+
+        <exec dir="${java.io.tmpdir}" executable="${executableCmd}" outputproperty="foss_classpath">
+            <arg value="${foss_command}"/>
+        </exec> 
+
+        <delete file="${foss_script}" />
+        
+    </target>
+    
+    <target name="get-nuget-packages" >   
+        <property name="nuget.cache"    location="${toolbox.home}/nuget/.nuget/packages" />
+
+    
+        <exec  executable="dotnet" outputproperty="nuget.list.out" >
+            <arg line="nuget list source"/>
+        </exec>
+
+        <if><contains string="${nuget.list.out}" substring="NuGet Gallery" /><then>
+             <exec  executable="dotnet">
+                 <arg line="nuget remove source &quot;NuGet Gallery&quot;"/>
+             </exec>
+        </then></if>
+        <if><contains string="${nuget.list.out}" substring="nuget.org" /><then>
+             <exec  executable="dotnet">
+                 <arg line="nuget remove source nuget.org"/>
+             </exec>
+        </then></if>
+        <if><contains string="${nuget.list.out}" substring="TeamcenterCache" /><then>
+             <exec  executable="dotnet">
+                 <arg line="nuget remove source TeamcenterCache"/>
+             </exec>
+        </then></if>
+        
+        <if><not><contains string="${nuget.list.out}" substring="TeamcenterCache" /></not><then>
+            <exec  executable="dotnet">
+                <arg line="nuget add source ${nuget.cache} -n TeamcenterCache" />
+            </exec>
+        </then></if>
+
+
+
+    </target>
+	
+</project>
