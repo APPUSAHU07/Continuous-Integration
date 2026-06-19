@@ -16,7 +16,7 @@ All Rights Reserved.
     <version>3.2</version>
     <rtm_type>Main</rtm_type>
     <parent_release/>
-    <platform/>
+    <platform>wntx64</platform>
     <description>test</description>
     <application_dependency>
         <application id="Foundation" release="2512"/>

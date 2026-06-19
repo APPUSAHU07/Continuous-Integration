@@ -121,6 +121,8 @@
      <TcLOVValue value="Asia" description="" conditionName="isTrue"/>
      <TcLOVValue value="Non-Asia" description="" conditionName="isTrue"/>
    </TcLOV>
+   <TcLOV name="M55StatesInIndia" lovType="ListOfValuesString" usage="Exhaustive"
+       description="" isManagedExternally="true"/>
    <Functionality name="M55mavenberg" displayName="mavenberg" enabledForVerificationRules="false"
        description="Component for the template - m55mavenberg"/>
 </Add>
