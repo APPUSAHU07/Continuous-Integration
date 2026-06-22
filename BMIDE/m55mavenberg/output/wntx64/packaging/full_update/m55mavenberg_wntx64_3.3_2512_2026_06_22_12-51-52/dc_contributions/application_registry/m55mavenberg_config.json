@@ -1,0 +1,13 @@
+{
+  "appId": "m55mavenberg",
+  "attributes": {
+    "visible": true
+  },
+  "requireDependencies": [
+    "fnd0_foundation"
+  ],
+  "supportedArtifacts": [
+    "fnd0_dataModelArtifact",
+    "fnd0_serverArtifact"
+  ]
+}
