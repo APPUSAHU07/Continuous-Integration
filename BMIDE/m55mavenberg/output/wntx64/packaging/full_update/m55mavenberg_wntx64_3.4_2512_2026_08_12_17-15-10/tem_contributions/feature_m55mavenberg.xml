@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    Document   : feature_m55mavenberg.xml
+    Description: This XML is used by TEM to install or upgrade the "m55mavenberg" solution.
+-->
+<feature>
+    <name value="mavenberg"/>
+    <property name="feature_name" value="m55mavenberg"/>
+    <group value="package"/>
+    <guid value="8823B267918C2B838392F01B8C183F49"/>
+    <bundle value="${feature_name}Bundle.xml"/>
+    <description value="${feature_name}.description"/>
+    <include file="dataModelDependency.xml"/>
+    <relation/>
+    <feature>
+        <!--  Feature: Data Model -->
+        <name value="Data Model"/>
+        <property name="feature_id" value="datamodel"/>
+        <property name="bmide_optional" value="false"/>
+        <property name="template_name" value="${feature_name}"/>
+        <property name="template_file" value="${template_name}_template.xml"/>
+        <root value="true"/>
+        <bundle value="${template_name}Bundle.xml"/>
+        <description value="${template_name}.description"/>
+        <guid value="378D7C13F370D027C35860D37FB41E8A"/>
+        <include file="coreDataModel2.xml"/>
+        <include file="generatePlmxmlSchema.xml"/>
+    </feature>
+    <feature>
+        <!--   Feature: Runtime Server -->
+        <name value="Runtime Server"/>
+        <property name="feature_id" value="rtserver"/>
+        <property name="bmide_optional" value="true"/>
+        <bundle value="${feature_name}Bundle.xml"/>
+        <description value="${feature_name}.description"/>
+        <guid value="AA71E473AF8705A590577EA3B59862B6"/>
+        <!-- Set to true/false if there is an rtserver component   -->
+        <property name="template_rtserver" value="false"/>
+        <property name="rtserver_file" value="${feature_name}_rtserver.zip"/>
+        <files>
+            <code>
+                <unzip file="${rtserver_file}"/>
+            </code>
+        </files>
+        <install>
+            <code>
+                <textserver file="emh_text.xml" include="${feature_name}_errors.xml"/>
+                <textserver file="tc_text.xml" include="${feature_name}_text.xml"/>
+            </code>
+        </install>
+        <upgrade>
+            <code>
+                <textserver file="emh_text.xml" include="${feature_name}_errors.xml"/>
+                <textserver file="tc_text.xml" include="${feature_name}_text.xml"/>
+            </code>
+        </upgrade>
+    </feature>
+    <dependencyReferences>
+        <reference name="foundation" value="8C061DD51E13E0CB9DC4687B1A3348BE"/>
+    </dependencyReferences>
+</feature>

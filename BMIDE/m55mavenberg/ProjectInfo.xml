@@ -56,7 +56,7 @@ All Rights Reserved.
     <NameValue key="ExternalBuild.LinkCommand.solaris" value="!udu.CXX_sol!"/>
     <NameValue key="SoaExternalBuild.NETClientOn.linux" value="true"/>
     <NameValue key="ExternalBuild.LinkerFlags.solaris" value="!udu.LD_FLAGS_sol!"/>
-    <NameValue key="ProjectBackup.LocalFileSystem.LastBkpTime" value="2026_06_10_16-51-23"/>
+    <NameValue key="ProjectBackup.LocalFileSystem.LastBkpTime" value="2026_08_11_14-37-52"/>
     <NameValue key="Windows.Platform.OS" value="Win64-bit"/>
     <NameValue key="SoaExternalBuild.RacClientDependJarsList.win64" value=""/>
     <NameValue key="ExternalBuild.LinkCommand.win64" value="link"/>
