@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--
+@<COPYRIGHT>@
+==================================================
+Copyright 2016.
+Siemens Product Lifecycle Management Software Inc.
+All Rights Reserved.
+==================================================
+@<COPYRIGHT>@
+-->
+<localization name="m5test">
+    <property name="displayName" value="test"/>
+    <property name="description" value="this is test"/>
+</localization>

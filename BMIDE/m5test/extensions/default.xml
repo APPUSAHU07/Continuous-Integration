@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TcBusinessData xmlns="http://teamcenter.com/BusinessModel/TcBusinessData" Date="">
+<Add>
+   <TcClass className="M5car" parentClassName="Item" isExportable="false" isUninstantiable="false"
+       isUninheritable="false" description=""/>
+   <TcClass className="M5carMasterS" parentClassName="ItemMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="M5carRevMasterS" parentClassName="ItemVersionMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="M5carRevision" parentClassName="ItemRevision" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <OperationInputType typeName="M5carCreI" parentTypeName="ItemCreI" typeClassName="M5carCreI"
+       description="CreateInput object for &quot;M5car&quot; business object" isAbstract="false"
+       artifactName="M5carCreI"/>
+   <OperationInputType typeName="M5carMasterCreI" parentTypeName="Item MasterCreI"
+       typeClassName="M5carMasterCreI" description="CreateInput object for &quot;M5carMaster&quot; business object"
+       isAbstract="false" artifactName="M5carMasterCreI"/>
+   <OperationInputType typeName="M5carMasterSCreI" parentTypeName="ItemMasterCreI"
+       typeClassName="M5carMasterSCreI" description="CreateInput object for &quot;M5carMasterS&quot; business object"
+       isAbstract="false" artifactName="M5carMasterSCreI"/>
+   <OperationInputType typeName="M5carMasterSSvAI" parentTypeName="ItemMasterSvAI"
+       typeClassName="M5carMasterSSvAI" description="SaveAsInput object for &quot;M5carMasterS&quot; business object"
+       isAbstract="false" artifactName="M5carMasterSSvAI"/>
+   <OperationInputType typeName="M5carMasterSvAI" parentTypeName="Item MasterSvAI"
+       typeClassName="M5carMasterSvAI" description="SaveAsInput object for &quot;M5carMaster&quot; business object"
+       isAbstract="false" artifactName="M5carMasterSvAI"/>
+   <OperationInputType typeName="M5carRevMasterSCreI" parentTypeName="ItemVersionMasterCreI"
+       typeClassName="M5carRevMasterSCreI" description="CreateInput object for &quot;M5carRevMasterS&quot; business object"
+       isAbstract="false" artifactName="M5carRevMasterSCreI"/>
+   <OperationInputType typeName="M5carRevMasterSSvAI" parentTypeName="ItemVersionMasterSvAI"
+       typeClassName="M5carRevMasterSSvAI" description="SaveAsInput object for &quot;M5carRevMasterS&quot; business object"
+       isAbstract="false" artifactName="M5carRevMasterSSvAI"/>
+   <OperationInputType typeName="M5carRevisionCreI" parentTypeName="ItemRevisionCreI"
+       typeClassName="M5carRevisionCreI" description="CreateInput object for &quot;M5carRevision&quot; business object"
+       isAbstract="false" artifactName="M5carRevisionCreI"/>
+   <OperationInputType typeName="M5carRevisionMasterCreI" parentTypeName="ItemRevision MasterCreI"
+       typeClassName="M5carRevisionMasterCreI" description="CreateInput object for &quot;M5carRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="M5carRevisionMasterCreI"/>
+   <OperationInputType typeName="M5carRevisionMasterSvAI" parentTypeName="ItemRevision MasterSvAI"
+       typeClassName="M5carRevisionMasterSvAI" description="SaveAsInput object for &quot;M5carRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="M5carRevisionMasterSvAI"/>
+   <OperationInputType typeName="M5carRevisionRevI" parentTypeName="ItemRevisionRevI"
+       typeClassName="M5carRevisionRevI" description="ReviseInput object for &quot;M5carRevision&quot; business object"
+       isAbstract="false" artifactName="M5carRevisionRevI"/>
+   <OperationInputType typeName="M5carRevisionSvAI" parentTypeName="ItemRevisionSvAI"
+       typeClassName="M5carRevisionSvAI" description="SaveAsInput object for &quot;M5carRevision&quot; business object"
+       isAbstract="false" artifactName="M5carRevisionSvAI"/>
+   <OperationInputType typeName="M5carSvAI" parentTypeName="ItemSvAI" typeClassName="M5carSvAI"
+       description="SaveAsInput object for &quot;M5car&quot; business object" isAbstract="false"
+       artifactName="M5carSvAI"/>
+   <TcForm typeName="M5carMaster" parentTypeName="Item Master" typeClassName="Form"
+       description="MasterForm object for &quot;M5car&quot; business object" isAbstract="false"
+       artifactName="M5carMaster" functionality="M5test" formStorageClassName="M5carMasterS"/>
+   <TcForm typeName="M5carRevisionMaster" parentTypeName="ItemRevision Master" typeClassName="Form"
+       description="MasterForm object for &quot;M5carRevision&quot; business object"
+       isAbstract="false" artifactName="M5carRevisionMaster" functionality="M5test"
+       formStorageClassName="M5carRevMasterS"/>
+   <TcStandardType typeName="M5car" parentTypeName="Item" typeClassName="M5car" description=""
+       isAbstract="false" artifactName="M5car" functionality="M5test"/>
+   <TcStandardType typeName="M5carMasterS" parentTypeName="ItemMaster" typeClassName="M5carMasterS"
+       description="Form Storage object for &quot;M5carMaster&quot; business object"
+       isAbstract="false" artifactName="M5carMasterS" functionality="M5test"/>
+   <TcStandardType typeName="M5carRevMasterS" parentTypeName="ItemVersionMaster" typeClassName="M5carRevMasterS"
+       description="Form Storage object for &quot;M5carRevMaster&quot; business object"
+       isAbstract="false" artifactName="M5carRevMasterS" functionality="M5test"/>
+   <TcStandardType typeName="M5carRevision" parentTypeName="ItemRevision" typeClassName="M5carRevision"
+       description="ItemRevision object for &quot;M5car&quot;  business object" isAbstract="false"
+       artifactName="M5carRevision" functionality="M5test"/>
+   <TcGlobalConstantAttach constantName="Fnd0SelectedLocales" value="en_US"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5car" value="M5carCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5carMaster" value="M5carMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5carMasterS" value="M5carMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5carRevision" value="M5carRevisionCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5carRevisionMaster"
+       value="M5carRevisionMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="M5carRevMasterS" value="M5carRevMasterSCreI"/>
+   <TcTypeConstantAttach constantName="ItemRevision" typeName="M5car" value="M5carRevision"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="M5car" value="M5carMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="M5carRevision" value="M5carRevisionMaster"/>
+   <TcTypeConstantAttach constantName="ReviseInput" typeName="M5carRevision" value="M5carRevisionRevI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5car" value="M5carSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5carMaster" value="M5carMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5carMasterS" value="M5carMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5carRevision" value="M5carRevisionSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5carRevisionMaster"
+       value="M5carRevisionMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="M5carRevMasterS" value="M5carRevMasterSSvAI"/>
+   <Functionality name="M5test" displayName="test" enabledForVerificationRules="false"
+       description="Component for the template - m5test"/>
+</Add>
+</TcBusinessData>
